@@ -1,0 +1,8 @@
+.el-form-item,
+.el-form-item--default {
+  --font-size: var(--sop-font-size);
+}
+
+.el-form.el-form--label-top > .el-form-item:last-child {
+  margin-bottom: 0;
+}

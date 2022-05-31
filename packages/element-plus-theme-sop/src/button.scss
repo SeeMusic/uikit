@@ -1,0 +1,77 @@
+.el-button {
+  --el-button-font-weight: 400;
+
+  // default
+  --el-button-info-bg-color: #FFF;
+
+  // primary
+  --el-button-primary-bg-color: var(--sop-blue);
+  --el-button-primary-hover-bg-color: var(--sop-hover);
+
+  padding: 8px 15px;
+  font-size: var(--sop-font-size);
+  border: 1px solid var(--sop-blue);
+  border-radius: 6px;
+  color: var(--sop-blue);
+
+  &,
+  &:focus {
+    border-color: var(--el-button-primary-bg-color);
+    background-color: var(--el-button-info-bg-color);
+  }
+
+  &:hover {
+    background-color: var(--el-button-info-bg-color);
+    border-color: var(--el-button-primary-hover-bg-color);
+    color: var(--el-button-primary-hover-bg-color);
+  }
+
+  &:active {
+    border-color: var(--el-button-primary-bg-color);
+    color: var(--el-button-primary-bg-color);
+  }
+
+  &.is-disabled {
+    border-color: #DDD;
+    color: var(--sop-disabled);
+    background-color: var(--el-disabled-bg-color);
+    ;
+  }
+
+  &--primary {
+    --el-button-bg-color: var(--el-button-primary-bg-color);
+
+    // 需要注意顺序，按钮 hover -> mousedown => mouseup 都有颜色区分
+    &,
+    &:focus {
+      border-color: var(--el-button-primary-bg-color);
+      background-color: var(--el-button-primary-bg-color);
+      color: #FFF;
+    }
+
+
+    &:hover {
+      color: #FFF;
+      background-color: var(--el-button-primary-hover-bg-color);
+    }
+
+    &:active {
+      background-color: var(--el-button-primary-bg-color);
+    }
+
+    &.is-disabled {
+      background-color: var(--el-disabled-bg-color);
+      color: var(--sop-disabled);
+      border-color: #EEE;
+    }
+  }
+
+  &--large {
+    --el-button-size: 48px;
+
+    font-size: 18px;
+    padding-left: 31px;
+    padding-right: 31px;
+    border-radius: 8px;
+  }
+}

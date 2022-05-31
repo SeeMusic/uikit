@@ -1,0 +1,48 @@
+.el-tabs__header {
+  margin-bottom: 40px;
+}
+
+.el-tabs__nav-wrap:after {
+  height: 1px;
+  background: #DDD;
+}
+
+.el-tabs__item {
+  margin-right: 24px;
+  padding: 0;
+  height: 48px;
+  line-height: 24px;
+  font-weight: 400;
+  color: var(--sop-normal);
+
+  &.is-active,
+  &:hover {
+    color: var(--sop-blue);
+  }
+
+  &.is-disabled {
+    color: var(--sop-disabled);
+    cursor: not-allowed;
+
+    &:hover {
+      color: var(--sop-disabled);
+    }
+  }
+}
+
+.el-tabs__active-bar {
+  background-color: var(--sop-blue);
+}
+
+.el-tabs__item .is-icon-close {
+  transition: none;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.el-tabs--card>.el-tabs__header .el-tabs__item .is-icon-close {
+  width: 14px;
+}

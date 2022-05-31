@@ -1,0 +1,8 @@
+.el-input {
+  --el-input-text-color: var(--sop-normal);
+  --el-input-border-color: #DDD;
+  --el-input-hover-border: var(--sop-hover);
+  --el-input-focus-border: var(--sop-blue);
+
+  --el-input-boder: 1px solid var(--el-input-border-color);
+}

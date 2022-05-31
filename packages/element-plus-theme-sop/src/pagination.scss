@@ -1,0 +1,38 @@
+.el-pagination {
+  --el-pagination-font-size: var(--sop-font-size);
+  --el-pagination-hover-color: var(--sop-blue);
+  --el-pagination-border-radius: 2px;
+  --el-pagination-button-bg-color: none;
+
+  position: relative;
+  justify-content: flex-end;
+  padding: 0;
+
+  .el-pagination__text {
+    position: absolute;
+    left: 0;
+  }
+
+  &.is-background {
+    .btn-next,
+    .btn-prev,
+    .el-pager li {
+      color: var(--el-text-color-primary);
+    }
+
+    .btn-prev:disabled,
+    .btn-next:disabled {
+      background: none;
+    }
+
+    .el-pager li:not(.is-disabled).is-active {
+      background-color: #E6F0FF;
+      font-weight: 400;
+      color: var(--sop-blue);
+    }
+
+    // .el-pager li:not(.is-disabled):hover {
+    //   color: var(--sop-blue);
+    // }
+  }
+}

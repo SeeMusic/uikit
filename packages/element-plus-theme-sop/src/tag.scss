@@ -1,0 +1,15 @@
+.el-tag + .el-tag{
+  margin-left: 8px;
+}
+
+.el-tag {
+  --el-tag-bg-color: rgba(0, 64, 255, .04);
+  --el-tag-border-color: var(--el-disabled-border-color);
+  // --el-tag-hover-color
+  --el-tag-text-color: var(--sop-normal);
+  --el-tag-font-size: 14px;
+  --el-tag-border-radius: 4px;
+
+  height: 32px;
+  padding: 0 8px;
+}
