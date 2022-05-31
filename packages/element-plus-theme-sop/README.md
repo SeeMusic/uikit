@@ -29,7 +29,7 @@ npm run build-storybook
 - [ ] Pagination
 - [ ] Popconfirm
 - [ ] Popover
-- [ ] Pagination
+- [x] Pagination
 - [ ] Radio
 - [ ] RadioButton
 - [ ] RadioGroup
