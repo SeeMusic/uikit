@@ -1,0 +1,21 @@
+:root {
+  --bi-blue: #0040FF;
+  --bi-font-size: 14px;
+
+  --bi-green: #28CA41;
+  --bi-orange: #FFBD2E;
+  --bi-red: #FF4B4B;
+  --bi-gray: #999;
+
+  --bi-normal: #333;
+  --bi-hover: #2965FF;
+  // --bi-active: $blue;
+  --bi-disabled: #CCC;
+
+  --icon-default-size: 24px;
+
+
+  --el-disabled-bg-color: #EEE;
+  --el-disabled-border-color: #DDD;
+  --el-disabled-text-color: var(--bi-normal);
+}
