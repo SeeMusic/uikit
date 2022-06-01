@@ -1,8 +1,17 @@
-.el-input {
+.el-input,
+.el-textarea {
   --el-input-text-color: var(--sop-normal);
   --el-input-border-color: #DDD;
-  --el-input-hover-border: var(--sop-hover);
-  --el-input-focus-border: var(--sop-blue);
-
+  --el-input-hover-border-color: var(--sop-hover);
+  --el-input-focus-border-color: var(--sop-blue);
   --el-input-boder: 1px solid var(--el-input-border-color);
+
+  font-size: var(--sop-font-size);
+}
+
+.el-input-group__append,
+.el-input-group__prepend {
+  padding: 0 4px;
+  color: var(--sop-disabled);
+  background-color: var(--el-disabled-bg-color);
 }
