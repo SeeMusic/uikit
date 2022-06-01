@@ -18,15 +18,15 @@ npm run build-storybook
 
 ## 支持组件列表
 
-- [ ] Button
+- [x] Button
 - [ ] Checkbox
 - [ ] CheckboxGroup
 - [ ] DatePicker
 - [ ] Drawer
 - [ ] Form
-- [ ] Input
+- [x] Input
 - [ ] Option
-- [ ] Pagination
+- [x] Pagination
 - [ ] Popconfirm
 - [ ] Popover
 - [x] Pagination
