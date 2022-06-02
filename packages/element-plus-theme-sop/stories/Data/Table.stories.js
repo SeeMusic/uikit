@@ -2,25 +2,18 @@ import { ElTable, ElTableColumn } from 'element-plus';
 
 export default {
   title: 'Data/Table 表格',
-  // argTypes: {
-  //   stripe: {
-  //     control: { type: 'boolean' },
-  //     defaultValue: false,
-  //     description: '是否开启斑马纹（隔行换色）',
-  //     table: {
-  //       type: {
-  //         summary: 'boolean',
-  //       },
-  //       defaultValue: {
-  //         summary: 'false',
-  //       },
-  //     },
-  //   },
-  // },
-  parameters: {
-    docs: {
-      description: {
-        // component: '131',
+  argTypes: {
+    stripe: {
+      control: { type: 'boolean' },
+      defaultValue: false,
+      description: '是否开启斑马纹（隔行换色）',
+      table: {
+        type: {
+          summary: 'boolean',
+        },
+        defaultValue: {
+          summary: 'false',
+        },
       },
     },
   },
