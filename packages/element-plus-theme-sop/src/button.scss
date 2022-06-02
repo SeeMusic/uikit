@@ -5,22 +5,19 @@
   --el-button-hover-text-color: var(--sop-hover);
   --el-button-hover-bg-color: none;
   --el-button-hover-border-color: var(--sop-hover);
-  --el-button-active-text-color: var(--sop-blue);
-  --el-button-active-border-color: var(--sop-blue);
+  --el-button-active-text-color: var(--el-color-primary);
   --el-button-disabled-text-color: var(--sop-disabled);
   --el-button-disabled-border-color: var(--el-disabled-border-color);
   --el-button-disabled-bg-color: var(--el-disabled-bg-color);
 
   &--primary {
-    --el-button-bg-color: var(--sop-blue);
-
     --el-button-text-color: #FFF;
-    --el-button-border-color: var(--sop-blue);
-
+    --el-button-border-color: var(--el-color-primary);
     --el-button-hover-text-color: #FFF;
     --el-button-hover-bg-color: var(--sop-hover);
     --el-button-active-text-color: #FFF;
-    --el-button-active-bg-color: var(--sop-blue);
+    --el-button-active-border-color: var(--el-color-primary);
+    --el-button-active-bg-color: var(--el-color-primary);
 
     --el-button-disabled-border-color: var(--el-disabled-bg-color);
   }

@@ -1,6 +1,5 @@
 .el-pagination {
   --el-pagination-font-size: var(--sop-font-size);
-  --el-pagination-hover-color: var(--sop-blue);
   --el-pagination-border-radius: 4px;
   --el-pagination-button-bg-color: none;
 
@@ -33,7 +32,7 @@
     .el-pager li:not(.is-disabled).is-active {
       background-color: #E6F0FF;
       font-weight: 400;
-      color: var(--sop-blue);
+      color: var(--el-color-primary);
     }
 
     // size trigger

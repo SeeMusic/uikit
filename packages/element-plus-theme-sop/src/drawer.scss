@@ -1,5 +1,40 @@
+.el-drawer {
+  --el-drawer-padding-primary: 0 24px;
+
+  font-size: var(--sop-font-size);
+}
+
 .el-drawer__header {
-  margin-bottom: 0;
-  color: #333;
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 0;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+    height: 1px;
+    background: var(--el-disabled-border-color);
+  }
+}
+
+.el-drawer__title {
+  padding: 15px 0;
+  color: var(--el-text-color-primary);
   font-weight: 600;
+  font-size: var(--sop-font-size);
+}
+
+.el-drawer__close-btn {
+  font-size: 16px;
+}
+
+
+.el-drawer__footer {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  height: 32px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .16);
 }

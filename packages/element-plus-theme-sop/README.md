@@ -22,7 +22,7 @@ npm run build-storybook
 - [ ] Checkbox
 - [ ] CheckboxGroup
 - [ ] DatePicker
-- [ ] Drawer
+- [x] Drawer
 - [ ] Form
 - [x] Input
 - [ ] Option
@@ -34,7 +34,7 @@ npm run build-storybook
 - [ ] RadioButton
 - [ ] RadioGroup
 - [ ] Select
-- [ ] Table
+- [x] Table
 - [ ] Tabs
-- [ ] Tag
+- [x] Tag
 - [ ] Tooltips
