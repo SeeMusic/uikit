@@ -1,7 +1,7 @@
 .el-pagination {
   --el-pagination-font-size: var(--sop-font-size);
   --el-pagination-hover-color: var(--sop-blue);
-  --el-pagination-border-radius: 2px;
+  --el-pagination-border-radius: 4px;
   --el-pagination-button-bg-color: none;
 
   position: relative;
@@ -13,10 +13,15 @@
     left: 0;
   }
 
+  .el-pagination__sizes {
+    margin: 0;
+  }
+
   &.is-background {
     .btn-next,
     .btn-prev,
     .el-pager li {
+      border-radius: var(--el-pagination-border-radius);
       color: var(--el-text-color-primary);
     }
 
@@ -31,8 +36,26 @@
       color: var(--sop-blue);
     }
 
-    // .el-pager li:not(.is-disabled):hover {
-    //   color: var(--sop-blue);
-    // }
+    // size trigger
+    .el-pagination__sizes.is-last {
+      margin-left: 8px;
+    }
   }
+
+  // size trigger
+  .el-select .el-input {
+    width: 96px;
+  }
+}
+
+.el-pagination__editor {
+  min-width: 48px;
+}
+
+.el-pagination__editor.el-input {
+  width: 48px;
+}
+
+.el-pagination__jump {
+  color: var(--el-text-color-primary);
 }
