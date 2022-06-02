@@ -27,7 +27,7 @@ npm run build-storybook
 - [x] Input
 - [ ] Option
 - [x] Pagination
-- [ ] Popconfirm
+- [x] Popconfirm
 - [ ] Popover
 - [x] Pagination
 - [ ] Radio

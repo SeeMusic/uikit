@@ -1,0 +1,12 @@
+.el-popconfirm__main {
+  line-height: 24px;
+}
+
+.el-popconfirm__action {
+  margin-top: 16px;
+
+  // 设计规范中使用正常按钮，element-plus 写死了 size: small，此处需要强制覆写
+  .el-button {
+    --el-button-size: 32px;
+  }
+}
