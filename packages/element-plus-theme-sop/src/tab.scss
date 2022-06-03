@@ -1,48 +1,184 @@
+// TODO
+// Refactor: type 和 tab-position 组合时的样式实现
+
 .el-tabs__header {
-  margin-bottom: 40px;
+  margin-bottom: 16px;
 }
 
 .el-tabs__nav-wrap:after {
   height: 1px;
-  background: #DDD;
+  background: var(--el-disabled-border-color);
+}
+
+// fix height bug
+.el-tabs__nav {
+  font-size: 0;
 }
 
 .el-tabs__item {
-  margin-right: 24px;
+  margin-right: 16px;
   padding: 0;
-  height: 48px;
-  line-height: 24px;
+  height: 32px;
+  line-height: 1;
   font-weight: 400;
-  color: var(--sop-normal);
-
-  &.is-active,
-  &:hover {
-    color: var(--sop-blue);
-  }
+  font-size: var(--sop-font-size);
 
   &.is-disabled {
     color: var(--sop-disabled);
     cursor: not-allowed;
+  }
 
-    &:hover {
-      color: var(--sop-disabled);
+  &.is-left,
+  &.is-right {
+    line-height: 32px;
+  }
+}
+
+.el-tabs--right .el-tabs__item.is-right {
+  margin-left: 16px;
+  margin-right: 0;
+}
+
+.el-tabs--card {
+  &>.el-tabs__header {
+    border-bottom: 1px solid var(--el-disabled-border-color);
+
+    .el-tabs__nav {
+      border: none;
+    }
+
+    .el-tabs__item {
+      margin-right: 8px;
+      padding: 0 8px;
+      line-height: 32px - 2px;
+      border: 1px solid var(--el-disabled-border-color);
+      border-radius: var(--el-border-radius-base) var(--el-border-radius-base) 0 0;
+      background: var(--el-disabled-bg-color);
+
+      &:first-child {
+        border: 1px solid var(--el-disabled-border-color);
+      }
+
+      &.is-active {
+        background: #FAFAFA;
+      }
+    }
+  }
+
+  &.el-tabs--top,
+  &.el-tabs--bottom {
+    &>.el-tabs__header .el-tabs__item {
+      &:nth-child(2) {
+        padding-left: 8px;
+      }
+
+      &:last-child {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  &.el-tabs--left,
+  &.el-tabs--right {
+    &>.el-tabs__header {
+      border-bottom: 0;
+
+      .el-tabs__item {
+        margin-right: 0;
+        margin-left: 0;
+        margin-bottom: 8px;
+        border-color: var(--el-disabled-border-color);
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &.is-left {
+          border-radius: var(--el-border-radius-base) 0 0 var(--el-border-radius-base);
+          border: 1px solid var(--el-disabled-border-color);
+        }
+
+        &.is-right {
+          border-radius: 0 var(--el-border-radius-base) var(--el-border-radius-base) 0;
+          border: 1px solid var(--el-disabled-border-color);
+        }
+
+        &.is-active {
+          background: #FAFAFA;
+          border: 1px solid var(--el-disabled-border-color);
+
+          &:first-child {
+            border-top: 1px solid var(--el-disabled-border-color);
+          }
+
+          &:last-child {
+            border-bottom: 1px solid var(--el-disabled-border-color);
+          }
+        }
+      }
+
+      &.is-left {
+        border-right: 1px solid var(--el-disabled-border-color);
+      }
+
+      &.is-right {
+        border-left: 1px solid var(--el-disabled-border-color);
+      }
     }
   }
 }
 
-.el-tabs__active-bar {
-  background-color: var(--sop-blue);
+.el-tabs--border-card {
+  &>.el-tabs__header {
+    border-bottom: 1px solid var(--el-disabled-border-color);
+    background: var(--el-disabled-bg-color);
+
+    .el-tabs__item {
+      margin-right: 0;
+      padding: 0 8px;
+      line-height: 30px;
+      color: var(--el-text-color-primary);
+
+      &.is-disabled {
+        color: var(--sop-disabled);
+        cursor: not-allowed;
+      }
+    }
+  }
+
+  &.el-tabs--top,
+  &.el-tabs--bottom {
+    &>.el-tabs__header .el-tabs__item {
+      &:nth-child(2) {
+        padding-left: 8px;
+      }
+
+      :last-child {
+        padding-right: 8px;
+      }
+    }
+  }
+
+  &.el-tabs--bottom > .el-tabs__header.is-bottom {
+    margin-top: 0;
+  }
+
+  &.el-tabs--left,
+  &.el-tabs--right {
+    &>.el-tabs__header {
+      border-bottom: 0;
+    }
+  }
 }
 
-.el-tabs__item .is-icon-close {
-  transition: none;
+.el-tabs--bottom .el-tabs__header.is-bottom {
+  margin-top: 16px;
 }
 
-.el-tabs--card>.el-tabs__header .el-tabs__item.is-closable:hover {
-  padding-left: 20px;
-  padding-right: 20px;
+.el-tabs--left > .el-tabs__header.is-left {
+  margin-right: 16px;
 }
 
-.el-tabs--card>.el-tabs__header .el-tabs__item .is-icon-close {
-  width: 14px;
+.el-tabs--right .el-tabs__header.is-right {
+  margin-left: 16px;
 }
