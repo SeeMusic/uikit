@@ -1,0 +1,14 @@
+.el-checkbox {
+  --el-checkbox-font-size: var(--sop-font-size);
+  --el-checkbox-text-color: var(--sop-normal);
+  --el-checkbox-font-weight: 400;
+
+  --el-checkbox-input-border: 1px solid var(--sop-gray);
+  --el-checkbox-border-radius: 3px;
+
+  margin-right: 24px;
+}
+
+.el-checkbox-button__inner {
+  font-size: var(--sop-font-size);
+}

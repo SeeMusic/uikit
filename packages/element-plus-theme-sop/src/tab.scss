@@ -1,5 +1,9 @@
-// TODO
-// Refactor: type 和 tab-position 组合时的样式实现
+// 2.2.4 引入了 --el-tabs-header-height：40px 的定义，但仅在 card 场景使用
+// .el-tabs--card>.el-tabs__header { height: var(--el-tabs-header-height)}
+// 这里直接注释掉，使用内容高度
+.el-tabs {
+  --el-tabs-header-height: auto;
+}
 
 .el-tabs__header {
   margin-bottom: 16px;

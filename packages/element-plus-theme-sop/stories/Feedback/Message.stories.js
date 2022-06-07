@@ -15,7 +15,6 @@ const Template = (args) => ({
     openError() {
       ElMessage.error({
         showClose: true,
-        duration: 0,
         message: '失败信息文本'
       });
     },
