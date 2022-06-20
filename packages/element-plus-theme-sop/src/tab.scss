@@ -60,7 +60,7 @@
       background: var(--el-disabled-bg-color);
 
       &:first-child {
-        border: 1px solid var(--el-disabled-border-color);
+        border-left: 1px solid var(--el-disabled-border-color);
       }
 
       &.is-active {
