@@ -1,0 +1,26 @@
+:root {
+  --sop-blue: #0040FF;
+  --sop-font-size: 12px;
+
+  --sop-green: #28CA41;
+  --sop-orange: #FFBD2E;
+  --sop-red: #FF4B4B;
+  --sop-gray: #999;
+
+  --sop-normal: #333;
+  --sop-hover: #2965FF;
+  // --sop-active: $blue;
+  --sop-disabled: #CCC;
+
+  --icon-default-size: 24px;
+
+  --el-text-color-primary: #333;
+
+  --el-color-primary: var(--sop-blue);
+
+  --el-disabled-bg-color: #EEE;
+  --el-disabled-border-color: #DDD;
+  --el-disabled-text-color: var(--sop-normal);
+
+  --el-color-danger: var(--sop-red);
+}

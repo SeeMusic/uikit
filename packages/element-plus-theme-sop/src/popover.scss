@@ -1,0 +1,20 @@
+.el-popover {
+  --el-popover-font-size: var(--sop-font-size);
+  --el-popover-title-font-size: var(--sop-font-size);
+  --el-popover-border-radius: 0;
+  --el-popover-padding: 16px;
+
+  // TODO
+  // --el-popover-border-color
+  // --el-popover-padding-large ? 哪里用了
+
+  &.el-popper {
+    line-height: 1.5;
+    color: var(--el-text-color-primary);
+  }
+}
+
+.el-popover__title {
+  line-height: inherit; // 1.5
+  font-weight: 600;
+}
