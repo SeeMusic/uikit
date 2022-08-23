@@ -17,13 +17,16 @@
 
   .el-radio__inner {
     background: transparent;
+
+    &:after {
+      background-color: var(--el-color-primary);
+    }
   }
 }
 
 .el-radio__inner::after {
   width: 8px;
   height: 8px;
-  background-color: var(--el-color-primary);
 }
 
 
