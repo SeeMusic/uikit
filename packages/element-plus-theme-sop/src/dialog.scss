@@ -1,0 +1,53 @@
+.el-dialog {
+  --el-dialog-padding-primary: 0 24px;
+  --el-dialog-title-font-size: var(--sop-font-size);
+  --el-dialog-content-font-size: var(--sop-font-size);
+}
+
+.el-dialog__header {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+  margin-bottom: 16px;
+  padding-bottom: 0;
+
+  &:after {
+    position: absolute;
+    content: "";
+    left: 24px;
+    right: 24px;
+    bottom: 0;
+    height: 1px;
+    background: var(--el-disabled-border-color);
+  }
+}
+
+.el-dialog__title {
+  padding: 12px 0; // 总高 48 px
+  flex: 1;
+  font-weight: 600;
+}
+
+.el-dialog__headerbtn {
+  position: static;
+  font-size: 16px;
+  width: auto;
+  height: 16px;
+}
+
+.el-dialog__body {
+  padding: var(--el-dialog-padding-primary);
+  padding-bottom: 16px;
+  line-height: var(--el-dialog-font-line-height);
+  color: var(--sop-normal);
+}
+
+
+.el-dialog__footer {
+  margin-top: 16px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  // height: 32px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .16);
+}
