@@ -26,7 +26,7 @@ importers:
       '@storybook/vue3': ^6.5.10
       '@vitejs/plugin-vue': ^3.1.0
       babel-loader: ^8.2.5
-      element-plus: 2.2.16
+      element-plus: 2.2.17
       sass: ^1.54.8
       typescript: ^4.5.4
       vite: ^3.1.0
@@ -42,7 +42,7 @@ importers:
       '@storybook/vue3': 6.5.10_xmpjqyksx7l3i6yuiywo4ks2ii
       '@vitejs/plugin-vue': 3.1.0_vite@3.1.0+vue@3.2.38
       babel-loader: 8.2.5_@babel+core@7.18.5
-      element-plus: 2.2.16_vue@3.2.38
+      element-plus: 2.2.17_vue@3.2.38
       sass: 1.54.8
       typescript: 4.7.3
       vite: 3.1.0_sass@1.54.8
@@ -5033,11 +5033,7 @@ packages:
   /@types/lodash-es/4.17.6:
     resolution: {integrity: sha512-R+zTeVUKDdfoRxpAryaQNRKk3105Rrgx2CFRClIgRGaqDTdjsm8h6IYA8ir584W3ePzkZfst5xIgDwYrlh9HLg==}
     dependencies:
-      '@types/lodash': 4.14.182
-    dev: true
-
-  /@types/lodash/4.14.182:
-    resolution: {integrity: sha512-/THyiqyQAP9AfARo4pF+aCGcyiQ94tX/Is2I7HofNRqoYLgN1PBoOWu2/zTA5zMxzP5EFutMtWtGAFRKUe961Q==}
+      '@types/lodash': 4.14.184
     dev: true
 
   /@types/lodash/4.14.184:
@@ -7598,8 +7594,8 @@ packages:
     resolution: {integrity: sha512-nPdgMWtjjWGCtreW/2adkrB2jyHjClo9PtVhR6rW+oxa4E4Wom642Tn+5LslHP3XPL5MCpkn5/UEY60EXylNeQ==}
     dev: true
 
-  /element-plus/2.2.16_vue@3.2.38:
-    resolution: {integrity: sha512-rvaTMFIujec9YDC5lyaiQv2XVUCHuhVDq2k+9vQxP78N8Wd07iEOGa9pvEVOO2uYc75l4rSl2RE/IWPH/6Mdzw==}
+  /element-plus/2.2.17_vue@3.2.38:
+    resolution: {integrity: sha512-MGwMIE/q+FFD3kgS23x8HIe5043tmD1cTRwjhIX9o6fim1avFnUkrsfYRvybbz4CkyqSb185EheZS5AUPpXh2g==}
     peerDependencies:
       vue: ^3.2.0
     dependencies:
@@ -7607,7 +7603,7 @@ packages:
       '@element-plus/icons-vue': 2.0.6_vue@3.2.38
       '@floating-ui/dom': 1.0.1
       '@popperjs/core': /@sxzz/popperjs-es/2.11.7
-      '@types/lodash': 4.14.182
+      '@types/lodash': 4.14.184
       '@types/lodash-es': 4.17.6
       '@vueuse/core': 9.1.0_vue@3.2.38
       async-validator: 4.2.5
