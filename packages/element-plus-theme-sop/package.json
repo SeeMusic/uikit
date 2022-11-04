@@ -1,7 +1,7 @@
 {
   "name": "@seemusic/element-plus-theme-sop",
   "private": false,
-  "version": "2.2.17-rc.2",
+  "version": "2.2.19",
   "description": "星球发行 SOP 系统自定义 Element Plus 皮肤",
   "main": "src/index.scss",
   "author": "cuiguojie@kanjian.com",
@@ -10,30 +10,30 @@
     "build-storybook": "storybook build"
   },
   "peerDependencies": {
-    "element-plus": "2.2.17"
+    "element-plus": "2.2.19"
   },
   "devDependencies": {
-    "@rushstack/eslint-patch": "^1.1.4",
-    "@storybook/addon-essentials": "^7.0.0-alpha.40",
-    "@storybook/addon-interactions": "^7.0.0-alpha.40",
-    "@storybook/addon-links": "^7.0.0-alpha.40",
+    "@rushstack/eslint-patch": "^1.2.0",
+    "@storybook/addon-essentials": "^7.0.0-alpha.47",
+    "@storybook/addon-interactions": "^7.0.0-alpha.47",
+    "@storybook/addon-links": "^7.0.0-alpha.47",
     "@storybook/testing-library": "^0.0.13",
-    "@storybook/vue3": "^7.0.0-alpha.40",
-    "@storybook/vue3-vite": "^7.0.0-alpha.40",
-    "@types/node": "^16.11.56",
-    "@vitejs/plugin-vue": "^3.1.0",
-    "@vue/eslint-config-typescript": "^11.0.0",
+    "@storybook/vue3": "^7.0.0-alpha.47",
+    "@storybook/vue3-vite": "^7.0.0-alpha.47",
+    "@types/node": "^16.18.3",
+    "@vitejs/plugin-vue": "^3.2.0",
+    "@vue/eslint-config-typescript": "^11.0.2",
     "@vue/tsconfig": "^0.1.3",
-    "element-plus": "2.2.17",
-    "eslint": "^8.22.0",
-    "eslint-plugin-storybook": "^0.6.6",
-    "eslint-plugin-vue": "^9.3.0",
-    "sass": "^1.54.8",
-    "storybook": "^7.0.0-alpha.40",
+    "element-plus": "2.2.19",
+    "eslint": "^8.26.0",
+    "eslint-plugin-storybook": "^0.6.7",
+    "eslint-plugin-vue": "^9.7.0",
+    "sass": "^1.56.0",
+    "storybook": "^7.0.0-alpha.47",
     "typescript": "~4.7.4",
-    "vite": "^3.1.0",
-    "vue": "^3.2.38",
-    "vue-tsc": "^0.40.10"
+    "vite": "^3.2.2",
+    "vue": "^3.2.41",
+    "vue-tsc": "^0.40.13"
   },
   "bugs": {
     "url": "https://github.com/SeeMusic/uikit/issues"
