@@ -10,7 +10,7 @@ export default {
     type: {
       description: '类型',
       control: { type: 'select' },
-      options: ['primary', ''],
+      options: ['primary', '', 'danger'],
       table: {
         type: {
           summary: 'string',
