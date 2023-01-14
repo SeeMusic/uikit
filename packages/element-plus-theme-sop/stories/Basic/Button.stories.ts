@@ -3,6 +3,7 @@
  *
  * 1. type：warning | danger 样式
  * 2. round、circle、loading 属性支持及样例
+ * 3. 点击后鼠标移出，颜色需要重置（目前 active 在离开后不会取消）
  */
 
 import { ElButton } from 'element-plus';
@@ -12,44 +13,18 @@ import type { Meta, StoryObj } from '@storybook/vue3';
 const meta: Meta<typeof ElButton> = {
   title: 'Basic/Button 按钮',
   component: ElButton,
-  parameters: {
-    docs: {
-      description: {
-        component: '目前设计规范中， `size` 只用到了 `default` 和 `small` 两种; `type` 只用到了 `primary` 和 `default` 两种。暂时不对其余属性做额外兼容测试',
-      },
-    },
-  },
   argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      table: {
-        type: {
-          summary: 'boolean',
-        },
-        defaultValue: {
-          summary: 'false',
-        },
-      },
-    },
     type: {
-      control: { type: 'select' },
-      options: ['primary', ''],
-      table: {
-        type: {
-          summary: 'string',
-        },
-      },
+      control: { type: 'select'},
+      options: ['primary', 'default'],
     },
     size: {
       control: { type: 'select' },
       options: ['large', 'default', 'small'],
-      description: 'ElPopconfirm 中的操作按钮，size 设置为 small，且不可修改，只能通过覆写 CSS 的方式统一',
-      table: {
-        type: {
-          summary: 'string',
-        },
-      },
     },
+  },
+  args: {
+    disabled: false,
   },
 }
 
@@ -71,7 +46,4 @@ export const Overview: Story = {
       </ElButton>
     `,
   }),
-  args: {
-    disabled: false,
-  },
 }
