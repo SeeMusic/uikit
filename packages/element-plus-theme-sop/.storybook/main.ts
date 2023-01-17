@@ -1,7 +1,7 @@
 const path = require('path');
 module.exports = {
   "stories": [
-    "../stories/**/*.stories.mdx",
+    "../stories/**/*.mdx",
     "../stories/**/*.stories.@(js|jsx|ts|tsx)"
   ],
   "addons": [
@@ -12,5 +12,8 @@ module.exports = {
   "framework": {
     "name": "@storybook/vue3-vite",
     "options": {}
+  },
+  docs: {
+    autodocs: 'tag'
   }
-}
+};

@@ -1,23 +1,18 @@
 import { ElCheckbox, ElCheckboxGroup, ElCheckboxButton } from 'element-plus';
 
-export default {
+import type { Meta, StoryObj } from '@storybook/vue3';
+
+const meta: Meta<typeof ElCheckbox> = {
   title: 'Form/Checkbox 多选框',
-  argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      defaultValue: false,
-      description: '禁用',
-      table: {
-        type: {
-          summary: 'boolean',
-        },
-        defaultValue: {
-          summary: 'false',
-        },
-      },
-    },
+  component: ElCheckbox,
+  args: {
+    disabled: false,
   },
-};
+}
+
+export default meta;
+
+type Story = StoryObj<typeof ElCheckbox>;
 
 const Template = (args) => ({
   components: {
@@ -56,7 +51,9 @@ const Template = (args) => ({
   `,
 });
 
-export const Overview = Template.bind({});
+export const Overview:Story = {
+  render: Template
+};
 
 
 const ButtonTemplate = (args) => ({
@@ -96,4 +93,6 @@ const ButtonTemplate = (args) => ({
   `,
 });
 
-export const CheckboxButtonGroup = ButtonTemplate.bind({});
+export const CheckboxButtonGroup:Story = {
+  render: ButtonTemplate
+};

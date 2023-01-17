@@ -1,0 +1,14 @@
+import { Meta } from '@storybook/blocks';
+import DatePickerStories from './DatePicker.stories';
+
+<Meta of={DatePickerStories} />
+
+`ElDatePicker` 的数据有一些 **奇怪的设定**：
+
+* 单日期的数据，不指定 `value-format` 的话是 JS Date 对象，一般和后端交互需要手动转 ISO 8601.
+* range 类型的数据，无论 `v-model` 绑定的是 `string` 还是 `[]`，选中后：
+  - 数据类型都会变为数组
+  - 数组内起止时间都是 **已经格式化好的** ISO 8601 字符串
+* 如果使用自带的 `clearable` 清除数据，那么最终数据都是 `null` 
+
+另外，JSON.stringify(value) 即可得出 ISO 8601 格式，但是还是建议用 `dayjs` 去格式化

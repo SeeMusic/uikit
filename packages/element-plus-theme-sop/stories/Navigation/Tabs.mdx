@@ -1,0 +1,19 @@
+import { Meta } from '@storybook/blocks';
+import * as TabStories from './Tabs.stories'
+
+<Meta of={TabStories} />
+
+## 参数说明
+
+### `type`
+当前设计规范，有以下使用场景约定：
+
+* 在卡片内，使用 `card`
+* 没有在卡片内，使用缺省值（`undefined`）
+* `border-card` 选项，做了样式不错位的兼容，但很少使用
+
+
+### `tabPosition`
+
+* 当前设计规范，只定义了 `top`
+* 其他选项，做了样式不错位的兼容，但很少使用
