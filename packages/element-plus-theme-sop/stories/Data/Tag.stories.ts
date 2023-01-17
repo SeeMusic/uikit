@@ -62,6 +62,19 @@ export const Overview: Story = {
       },
     },
     template: `
+      <div
+        style="margin-bottom: 24px; width:200px;"
+      >
+        <ElTag
+          v-for="(item, index) in list"
+          :key="index"
+          v-bind="args"
+          @close="removeItem(index)"
+        >
+          {{ item.name }}
+        </ElTag>
+      </div>
+
       <div>
         <ElTag
           v-for="(item, index) in list"

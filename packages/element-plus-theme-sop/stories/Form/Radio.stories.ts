@@ -1,23 +1,18 @@
 import { ElRadio, ElRadioGroup, ElRadioButton } from 'element-plus';
 
-export default {
+import type { Meta, StoryObj } from '@storybook/vue3';
+
+const meta: Meta<typeof ElRadio> = {
   title: 'Form/Radio 单选框',
-  argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      defaultValue: false,
-      description: '禁用',
-      table: {
-        type: {
-          summary: 'boolean',
-        },
-        defaultValue: {
-          summary: 'false',
-        },
-      },
-    },
+  component: ElRadio,
+  args: {
+    disabled: false,
   },
-};
+}
+
+export default meta;
+
+type Story = StoryObj<typeof ElRadio>;
 
 const Template = (args) => ({
   components: {
@@ -56,7 +51,9 @@ const Template = (args) => ({
   `,
 });
 
-export const RadioGroup = Template.bind({});
+export const RadioGroup:Story = {
+  render: Template
+};
 
 const ButtonGroupTemplate = (args) => ({
   components: {
@@ -95,4 +92,6 @@ const ButtonGroupTemplate = (args) => ({
   `,
 });
 
-export const RadioButtonGroup = ButtonGroupTemplate.bind({});
+export const RadioButtonGroup:Story = {
+  render: ButtonGroupTemplate
+};

@@ -7,24 +7,20 @@ import {
   ElTag,
 } from 'element-plus';
 
-export default {
+import type { Meta, StoryObj } from '@storybook/vue3';
+
+const meta: Meta<typeof ElForm> = {
   title: 'Form/Form 表单',
-  argTypes: {
-    disabled: {
-      control: { type: 'boolean' },
-      defaultValue: false,
-      description: '禁用',
-      table: {
-        type: {
-          summary: 'boolean',
-        },
-        defaultValue: {
-          summary: 'false',
-        },
-      },
-    },
+  component: ElForm,
+  args: {
+    disabled: false,
+    labelPosition: 'top',
   },
-};
+}
+
+export default meta;
+
+type Story = StoryObj<typeof ElForm>;
 
 const BasicTemplate = (args) => ({
   components: {
@@ -113,11 +109,9 @@ const BasicTemplate = (args) => ({
   `,
 });
 
-export const Basic = BasicTemplate.bind({});
-Basic.args = {
-  disabled: false,
-  labelPosition: 'top',
-};
+export const Overview:Story = {
+  render: BasicTemplate,
+}
 
 const VerticalOptionsTemplate = (args) => ({
   components: {
@@ -195,14 +189,10 @@ const VerticalOptionsTemplate = (args) => ({
   `,
 });
 
-export const VerticalOptions = VerticalOptionsTemplate.bind({});
-
-VerticalOptions.storyName = '扩展样式 - 纵向选择列表';
-VerticalOptions.args = {
-  disabled: false,
-  labelPosition: 'top',
-}
-
+export const VerticalOptions:Story = {
+  name: '扩展样式 - 纵向选项组',
+  render: VerticalOptionsTemplate,
+};
 
 const FormItemFooterTemplate = (args) => ({
   components: {
@@ -238,10 +228,7 @@ const FormItemFooterTemplate = (args) => ({
   `,
 });
 
-export const FormItemFooter = FormItemFooterTemplate.bind({});
-
-FormItemFooter.storyName = '扩展样式 - 表单单元项描述区';
-FormItemFooter.args = {
-  disabled: false,
-  labelPosition: 'top',
-}
+export const FormItemFooter:Story = {
+  name: '扩展样式 - 表单单元项描述区',
+  render: FormItemFooterTemplate
+};

@@ -1,5 +1,14 @@
-.el-tag + .el-tag{
-  margin-left: 8px;
+.el-tag {
+  --el-tag-bg-color: #E6F0FF;
+  --el-tag-border-color: var(--el-tag-bg-color);
+  --el-tag-text-color: var(--sop-normal);
+  --el-tag-border-radius: 2px;
+
+  margin-right: 8px;
+
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .el-tag--small {
@@ -9,11 +18,4 @@
   & + & {
     margin-left: 4px;
   }
-}
-
-.el-tag {
-  --el-tag-bg-color: #E6F0FF;
-  --el-tag-border-color: var(--el-tag-bg-color);
-  --el-tag-text-color: var(--sop-normal);
-  --el-tag-border-radius: 2px;
 }

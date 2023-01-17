@@ -23,7 +23,7 @@ export const Overview: Story = {
       };
     },
     methods: {
-      showDialog() {
+      showDrawer() {
         this.isShow = true;
       },
     },
@@ -32,7 +32,7 @@ export const Overview: Story = {
     },
     template: `
       <div>
-        <ElButton @click="showDialog">打开常规抽屉</ElButton>
+        <ElButton @click="showDrawer">打开常规抽屉</ElButton>
         <ElDrawer
           title="抽屉标题"
           v-model="isShow"
@@ -58,7 +58,7 @@ export const FooterSlot: Story = {
       };
     },
     methods: {
-      showDialog() {
+      showDrawer() {
         this.isShow = true;
       },
     },
@@ -107,7 +107,7 @@ export const FooterSlot: Story = {
           <template #footer>
             <ElButton>退出</ElButton>
             <ElButton type="primary">递交</ElButton>
-          <template>
+          </template>
         </ElDrawer>
       </div>
     `,
