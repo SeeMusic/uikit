@@ -1,33 +1,36 @@
 .el-button {
   --el-button-font-weight: 400;
-  --el-button-text-color: var(--sop-normal);
+  --el-button-text-color: var(--el-text-color-primary);
 
   --el-button-border-color: #999;
-  --el-button-hover-text-color: var(--sop-hover);
+  --el-button-hover-text-color: var(--seemusic-text-hover);
   --el-button-hover-bg-color: none;
-  --el-button-hover-border-color: var(--sop-hover);
+  // TODO plain 支持
+  --el-button-hover-border-color: var(--seemusic-text-hover);
+
   --el-button-active-text-color: var(--el-color-primary);
-  --el-button-disabled-text-color: var(--sop-disabled);
   --el-button-disabled-border-color: var(--el-disabled-border-color);
   --el-button-disabled-bg-color: var(--el-disabled-bg-color);
 
   &--primary {
     --el-button-border-color: var(--el-color-primary);
     --el-button-hover-text-color: #FFF;
-    --el-button-hover-bg-color: var(--sop-hover);
+    --el-button-hover-bg-color: var(--seemusic-text-hover);
     --el-button-active-text-color: #FFF;
     --el-button-active-border-color: var(--el-color-primary);
     --el-button-active-bg-color: var(--el-color-primary);
 
+    --el-button-disabled-text-color: var(--el-disabled-text-color);
     --el-button-disabled-border-color: var(--el-disabled-bg-color);
   }
 
+  // TODO 验证
   &--danger {
-    --el-button-border-color: var(--sop-red);
+    --el-button-border-color: var(--el-color-danger);
 
     &:hover {
-      color: var(--sop-red);
-      border-color: var(--sop-red);
+      color: var(--el-color-danger);
+      border-color: var(--el-color-danger);
     }
   }
 
