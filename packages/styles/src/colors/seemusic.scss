@@ -1,0 +1,45 @@
+:root {
+  // Brand Color
+  --seemusic-primary: #0040FF;
+
+  // Status
+  --seemusic-success: #28CA41;
+  --seemusic-warning: #FFBD2E;
+  --seemusic-danger: #FF4B4B;
+  --seemusic-info: #999;
+
+  // Text
+  --seemusic-text-normal: #333;
+  --seemusic-text-description: #999;
+  --seemusic-text-disabled: #CCC;
+
+  --seemusic-text-hover: #2965FF;
+  --seemusic-text-active: var(--seemusic-primary);
+
+  // Border
+  --seemusic-border-disabled: #DDD;
+
+  // Background
+  --seemusic-bg-disabled: #EEE;
+
+  // Components
+  --seemusic-overlay: rgba(0, 0, 0, .4);
+
+  --seemusic-highlight-bg: var(--seemusic-primary);
+  --seemusic-highlight-context: #FFF;
+
+  --seemusic-primary-border: #A3C6FF;
+  --seemusic-primary-bg: #E6F0FF;
+
+  --seemusic-success-border: #76E37F;
+  --seemusic-success-bg: #F0FFF0;
+
+  --seemusic-card-warning-border: #FFDF80;
+  --seemusic-card-warning-bg: #FFFBE9;
+
+  --seemusic-card-danger-border: #FFA29C;
+  --seemusic-card-danger-bg: #FFF2F0;
+
+  --seemusic-card-info-border: #B2B2B2;
+  --seemusic-card-info-bg: #EEE;
+}

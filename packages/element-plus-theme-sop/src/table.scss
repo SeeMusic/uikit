@@ -1,7 +1,7 @@
 .el-table {
   --el-table-header-text-color: #FFF;
   --el-table-header-bg-color: #333;
-  --el-table-text-color: var(--sop-normal);
+  --el-table-text-color: var(--el-text-color-primary);
   --el-table-border-color: var(--el-disabled-bg-color);
 
   font-size: var(--sop-font-size);
@@ -40,5 +40,5 @@
 }
 
 .el-table__empty-text {
-  color: var(--sop-gray);
+  color: var(--seemusic-info);
 }

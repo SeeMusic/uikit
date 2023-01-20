@@ -28,7 +28,7 @@
   font-size: var(--sop-font-size);
 
   &.is-disabled {
-    color: var(--sop-disabled);
+    color: var(--seemusic-text-disabled);
     cursor: not-allowed;
   }
 
@@ -144,7 +144,7 @@
       color: var(--el-text-color-primary);
 
       &.is-disabled {
-        color: var(--sop-disabled);
+        color: var(--seemusic-text-disabled);
         cursor: not-allowed;
       }
     }

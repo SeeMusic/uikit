@@ -1,0 +1,16 @@
+{
+  "name": "@seemusic/styles",
+  "private": false,
+  "version": "0.0.1",
+  "description": "看见音乐 CSS 公共库",
+  "author": "cuiguojie@kanjian.com",
+  "bugs": {
+    "url": "https://github.com/SeeMusic/uikit/issues"
+  },
+  "homepage": "https://github.com/SeeMusic/uikit/packages/styles",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeMusic/uikit.git"
+  }
+}

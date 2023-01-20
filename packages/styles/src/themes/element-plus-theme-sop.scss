@@ -1,0 +1,22 @@
+@import "../colors/seemusic.scss";
+
+:root {
+  --sop-font-size: 12px;
+
+  // TODO
+  // --seemusic-text-disabled 排重及映射到默认变量
+
+  --icon-default-size: 24px;
+
+  // 主色彩改 #333 考虑换 regular
+  --el-text-color-primary: #333;
+  // --el-text-color-regular: var(--seemusic-text-normal);
+
+  --el-color-primary: var(--seemusic-primary);
+
+  --el-disabled-bg-color: var(--seemusic-bg-disabled);
+  --el-disabled-border-color: var(--seemusic-border-disabled);
+  --el-disabled-text-color: var(--seemusic-text-disabled);
+
+  --el-color-danger: var(--seemusic-danger);
+}

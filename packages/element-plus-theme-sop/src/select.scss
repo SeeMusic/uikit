@@ -1,5 +1,5 @@
 .el-select {
-  --el-select-border-color-hover: var(--sop-hover);
+  --el-select-border-color-hover: var(--seemusic-text-hover);
   --el-select-font-size: var(--sop-font-size);
   --el-select-input-font-size: var(--sop-font-size);
 }
@@ -7,7 +7,7 @@
 .el-select-dropdown__item {
   padding: 0 32px 0 8px;
   font-size: var(--sop-font-size);
-  color: var(--sop-normal);
+  color: var(--el-text-color-primary);
 
   &.selected {
     font-weight: 400;

@@ -1,8 +1,8 @@
 .el-input,
 .el-textarea {
-  --el-input-text-color: var(--sop-normal);
+  --el-input-text-color: var(--el-text-color-primary);
   --el-input-border-color: #DDD;
-  --el-input-hover-border-color: var(--sop-hover);
+  --el-input-hover-border-color: var(--seemusic-text-hover);
   --el-input-boder: 1px solid var(--el-input-border-color);
 
   font-size: var(--sop-font-size);
@@ -11,7 +11,7 @@
 .el-input-group__append,
 .el-input-group__prepend {
   padding: 0 4px;
-  color: var(--sop-disabled);
+  color: var(--seemusic-text-disabled);
   background-color: var(--el-disabled-bg-color);
 }
 

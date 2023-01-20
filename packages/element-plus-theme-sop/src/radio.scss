@@ -1,10 +1,10 @@
 .el-radio {
   --el-radio-font-size: var(--sop-font-size);
   --el-radio-font-weight: 400;
-  --el-radio-text-color: var(--sop-normal);
+  --el-radio-text-color: var(--el-text-color-primary);
   --el-radio-input-width: 16px;
   --el-radio-input-height: 16px;
-  --el-radio-input-border-color: var(--sop-gray);
+  --el-radio-input-border-color: var(--seemusic-info);
   --el-radio-input-border: 1px solid var(--el-radio-input-border-color);
 
   margin-right: 24px;
@@ -12,7 +12,7 @@
 
 .el-radio__input.is-checked {
   &+.el-radio__label {
-    color: var(--sop-normal);
+    color: var(--el-text-color-primary);
   }
 
   .el-radio__inner {
@@ -40,10 +40,10 @@
   border-color: var(--el-disabled-border-color);
 
   &:hover {
-    color: var(--sop-hover);
+    color: var(--seemusic-text-hover);
   }
 }
 
 .el-radio-button__original-radio:disabled+.el-radio-button__inner {
-  color: var(--sop-disabled);
+  color: var(--seemusic-text-disabled);
 }
