@@ -4,7 +4,10 @@
   "private": true,
   "scripts": {
     "commit": "git-cz",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "build:ui-components": "pnpm --filter seemusic-ui run build",
+    "docs:serve": "pnpm --filter seemusic-ui run storybook",
+    "docs:build": "pnpm --filter seemusic-ui run build-storybook"
   },
   "engines": {
     "node": ">=16.14.0"
