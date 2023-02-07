@@ -1,0 +1,17 @@
+@import "@seemusic/styles/src/colors/seemusic.scss";
+
+:root {
+  --sop-font-size: 12px;
+
+  // 主色彩改 #333 考虑换 regular
+  --el-text-color-primary: var(--seemusic-text-normal);
+  --el-text-color-regular: var(--seemusic-text-normal);
+
+  --el-color-primary: var(--seemusic-primary);
+
+  --el-disabled-bg-color: var(--seemusic-bg-disabled);
+  --el-disabled-border-color: var(--seemusic-border-disabled);
+  --el-disabled-text-color: var(--seemusic-text-disabled);
+
+  --el-color-danger: var(--seemusic-danger);
+}

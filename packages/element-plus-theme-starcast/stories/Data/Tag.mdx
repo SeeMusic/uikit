@@ -1,0 +1,26 @@
+import { Meta } from '@storybook/blocks';
+import TagStories from './Tag.stories';
+
+<Meta of={TagStories} />
+
+## 参数说明
+
+### `effect`
+
+* 当前设计规范，只使用了缺省值 `light`。其他选项当前 **未作支持**
+
+### `size`
+
+* 当前设计规范，只使用了 `default` 和 `small`
+* `large` 可以使用，但不是第一优先级支持
+
+
+### `type`
+
+* 设计规范中，只使用了缺省值（即不明文传值的 `undefined`）；
+* 其他选项使用全局的状态色，可以显示但是不保证协调
+* 如果要覆写背景色，请直接使用 `color` 属性自行实现
+
+## 改动
+
+默认增加了 **同一个父级元素下** 多个相邻的 `ElTag` 之间的 **左右** 间距。上下间距由业务方去控制
