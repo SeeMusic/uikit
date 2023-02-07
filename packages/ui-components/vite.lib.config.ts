@@ -64,12 +64,12 @@ export default defineConfig(async ({ mode }) => {
         name: 'vite:scss-extract',
         apply: 'build',
         renderChunk(code) {
-          // const RE = /\.\.\/\.\.\/seemusic-ui\/src\/.*\/styles/;
-          const srcRE = /\.\.\/seemusic-ui\/src/g;
-          const entryRE = /\.\/seemusic-ui\/src/g;
+          // const RE = /\.\.\/\.\.\/ui-components\/src\/.*\/styles/;
+          const srcRE = /\.\.\/ui-components\/src/g;
+          const entryRE = /\.\/ui-components\/src/g;
           if (code.match(srcRE)) {
             // const s = new MagicString(code).replace(RE, './styles');
-            const s = new MagicString(code).replace(srcRE, '../../../seemusic-ui/lib');
+            const s = new MagicString(code).replace(srcRE, '../../../ui-components/lib');
             return {
               code: s.toString(),
               map: s.generateMap({ hires: true })

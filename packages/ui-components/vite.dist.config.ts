@@ -10,19 +10,31 @@ export default defineConfig(({ mode }) => {
     css: { preprocessorOptions: { scss: { charset: false } } },
     build: {
       emptyOutDir: false,
+      minify: false,
       sourcemap: true,
       lib: {
         entry: 'src/entry.ts',
-        name: 'seemusic-ui',
-        formats: ['umd'],
-        fileName: () => `${ pkg.name }.min.js`
+        name: 'UIComponents'
       },
       rollupOptions: {
-        external: ['vue', 'vue-router'],
-        output: {
-          assetFileNames: `${ pkg.name }.min.css`,
-          globals: { vue: 'Vue'}
-        }
+        external: ['vue'],
+        output: [
+          {
+            assetFileNames: `${ pkg.name }.es.css`
+          },
+          {
+            format: 'es',
+            entryFileNames: `${ pkg.name }.es.js`
+          },
+          {
+            format: 'umd',
+            entryFileNames: `${ pkg.name }.js`,
+            name: `${ pkg.name }.js`,
+            globals: {
+              vue: 'Vue'
+            }
+          }
+        ]
       }
     },
     plugins: [

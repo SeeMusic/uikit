@@ -1,9 +1,9 @@
 {
-  "name": "seemusic-ui",
+  "name": "@seemusic/ui-components",
   "version": "1.0.0",
   "description": "A Vue 3 UI Library. Uses Composable.",
   "keywords": [
-    "seemusic-ui",
+    "ui-components",
     "ui library",
     "vue"
   ],
@@ -27,7 +27,7 @@
   "exports": {
     ".": {
       "import": "./lib/framework.mjs",
-      "require": "./dist/seemusic-ui.js"
+      "require": "./dist/ui-components.js"
     },
     "./components": "./lib/components/index.mjs",
     "./components/*": "./lib/components/*/*.mjs",

@@ -5,14 +5,14 @@ import { toPascalCase } from './utils';
  *
  * @param options
  */
-export function SeeMusicUIResolver() {
+export function UIComponentsResolver() {
   return [
     {
       type: 'component' as const,
       resolve: (name: string) => {
         return {
           name: toPascalCase(name),
-          from: 'seemusic-ui/components'
+          from: 'ui-components/components'
         };
       }
     }

@@ -2,12 +2,12 @@ import { Meta } from '@storybook/blocks';
 
 <Meta title="指南导读/快速上手" />
 
-`seemusic-ui` 基于 `Vue3` 开发，看见音乐中后台组件库。
+`ui-components` 基于 `Vue3` 开发，看见音乐中后台组件库。
 
 # 安装
 
 ```
-pnpm add seemusic-ui
+pnpm add ui-components
 ```
 
 ## 全量导入组件
@@ -15,10 +15,10 @@ pnpm add seemusic-ui
 ```ts
 // main.ts
 
-import 'seemusic-ui/styles';
+import 'ui-components/styles';
 import { createApp } from 'vue';
-import { createSeeMusic } from 'seemusic-ui';
-import * as components from 'seemusic-ui/components';
+import { createSeeMusic } from 'ui-components';
+import * as components from 'ui-components/components';
 
 const app = createApp(App);
 const musicUI = createSeeMusic({ components });
@@ -30,14 +30,14 @@ app.use(musicUI);
 ```ts
 // xxx.vue
 
-import { SopBasicInfo } from 'seemusic-ui/components';
+import { SopBasicInfo } from 'ui-components/components';
 ```
 
 ## 自动导入组件（推荐）
 
 使用 unplugin-vue-components 插件来开启自动按需导入组件的支持。
 
-配置 `vite.config.ts` 并在 `Components` 插件中使用 `SeeMusicUIResolver` 组件解析器。
+配置 `vite.config.ts` 并在 `Components` 插件中使用 `UIComponentsResolver` 组件解析器。
 
 插件会自动解析模板中使用到的组件并导入。
 
@@ -45,7 +45,7 @@ import { SopBasicInfo } from 'seemusic-ui/components';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
-import { SeeMusicUIResolver } from 'seemusic-ui';
+import { UIComponentsResolver } from 'ui-components';
 
 export default defineConfig({
   plugins: [
@@ -53,7 +53,7 @@ export default defineConfig({
     Components({
       resolvers: [
         // 自动导入
-        SeeMusicUIResolver()
+        UIComponentsResolver()
       ],
       dts: 'src/dts/components.d.ts',
       extensions: ['vue'],

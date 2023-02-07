@@ -71,7 +71,7 @@ importers:
       vue: 3.2.45
       vue-tsc: 1.0.24_typescript@4.7.4
 
-  packages/seemusic-ui:
+  packages/ui-components:
     specifiers:
       '@seemusic/element-plus-theme-sop': workspace:^2.2.28-rc.2
       '@storybook/addon-docs': 7.0.0-beta.43
