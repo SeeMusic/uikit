@@ -12,7 +12,7 @@ export function UIComponentsResolver() {
       resolve: (name: string) => {
         return {
           name: toPascalCase(name),
-          from: 'ui-components/components'
+          from: '@seemusic/ui-components/components'
         };
       }
     }

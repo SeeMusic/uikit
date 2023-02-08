@@ -1,6 +1,7 @@
 {
   "name": "@seemusic/ui-components",
-  "version": "1.0.0",
+  "private": false,
+  "version": "1.0.0-rc.6",
   "description": "A Vue 3 UI Library. Uses Composable.",
   "keywords": [
     "ui-components",
@@ -32,6 +33,7 @@
     "./components": "./lib/components/index.mjs",
     "./components/*": "./lib/components/*/*.mjs",
     "./framework": "./lib/framework.mjs",
+    "./resolver": "./lib/resolver.mjs",
     "./styles": "./lib/styles/main.scss",
     "./styles/*": "./lib/styles/*",
     "./utils": "./lib/utils/index.mjs",
