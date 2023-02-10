@@ -1,4 +1,4 @@
-`ui-components` 基于 `Vue3` 开发，看见音乐中后台组件库。
+`@seemusic/ui-components` 基于 `Vue3` 开发，看见音乐中后台组件库。
 
 # 安装
 
@@ -11,10 +11,10 @@ pnpm add @seemusic/ui-components
 ```ts
 // main.ts
 
-import 'ui-components/styles';
+import '@seemusic/ui-components/styles';
 import { createApp } from 'vue';
-import { createSeeMusic } from 'ui-components';
-import * as components from 'ui-components/components';
+import { createSeeMusic } from '@seemusic/ui-components';
+import * as components from '@seemusic/ui-components/components';
 
 const app = createApp(App);
 const musicUI = createSeeMusic({ components });
@@ -26,12 +26,12 @@ app.use(musicUI);
 ```ts
 // xxx.vue
 
-import { SopBasicInfo } from 'ui-components/components';
+import { SopBasicInfo } from '@seemusic/ui-components/components';
 ```
 
 ## 自动导入组件（推荐）
 
-使用 unplugin-vue-components 插件来开启自动按需导入组件的支持。
+使用 `unplugin-vue-components` 插件来开启自动按需导入组件的支持。
 
 配置 `vite.config.ts` 并在 `Components` 插件中使用 `UIComponentsResolver` 组件解析器。
 
@@ -41,7 +41,7 @@ import { SopBasicInfo } from 'ui-components/components';
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import Components from 'unplugin-vue-components/vite';
-import { UIComponentsResolver } from 'ui-components';
+import { UIComponentsResolver } from '@seemusic/ui-components/resolver';
 
 export default defineConfig({
   plugins: [
