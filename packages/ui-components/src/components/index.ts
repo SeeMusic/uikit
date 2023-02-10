@@ -5,5 +5,4 @@ export * from './SopDataTable';
 export * from './SopDataTableItem';
 export * from './SopStatus';
 export * from './SopFilterForm';
-
-export * from './PageHeader';
+export * from './SopPageHeader';

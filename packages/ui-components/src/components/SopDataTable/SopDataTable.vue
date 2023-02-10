@@ -44,8 +44,10 @@ watchEffect(() => {
       const items = content.value.querySelectorAll('.sop-data-table-item');
       if (items.length) {
         for (let i = 0; i <= items.length; i++) {
-          (items[i] as HTMLDivElement).style.width = itemWidth.value;
-        } 
+          if ((items[i] as HTMLDivElement)) {
+            (items[i] as HTMLDivElement).style.width = itemWidth.value;
+          }
+        }
       }
     }
   });

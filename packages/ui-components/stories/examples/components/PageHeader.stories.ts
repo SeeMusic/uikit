@@ -1,4 +1,4 @@
-import { PageHeader } from '../../../lib/components';
+import { SopPageHeader } from '../../../lib/components';
 import { ElMessage, ElButton } from 'element-plus';
 import { pageHeaderCode } from '../demo'
 import type { Meta } from '@storybook/vue3';
@@ -6,7 +6,7 @@ import type { Meta } from '@storybook/vue3';
 
 // More on how to set up stories at: https://storybook.js.org/docs/7.0/vue/writing-stories/introduction
 const meta = {
-  title: 'Components/页头 PageHeader',
+  title: 'Components/页头 SopPageHeader',
   argTypes: {
     title: {
       type: 'string',
@@ -37,14 +37,14 @@ const meta = {
       }
     }
   }
-} as Meta<typeof PageHeader>;
+} as Meta<typeof SopPageHeader>;
 
 export default meta;
 
 export const Custom = {
   name: '自定义',
   render: (args: Record<string, string>) => ({
-    components: { PageHeader, ElButton },
+    components: { SopPageHeader, ElButton },
     setup() {
       return { args };
     },
@@ -54,7 +54,7 @@ export const Custom = {
       }
     },
     template: `
-      <PageHeader v-bind="args">
+      <SopPageHeader v-bind="args">
         <template #opt>
           <ElButton
             type="primary"
@@ -63,7 +63,7 @@ export const Custom = {
             + 新增
           </ElButton>
         </template>
-      </PageHeader>
+      </SopPageHeader>
     `
   }),
   args: {

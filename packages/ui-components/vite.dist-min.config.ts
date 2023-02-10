@@ -18,10 +18,10 @@ export default defineConfig(({ mode }) => {
         fileName: () => `${ pkg.name }.min.js`
       },
       rollupOptions: {
-        external: ['vue', 'vue-router'],
+        external: ['vue', 'vue-router', 'element-plus'],
         output: {
           assetFileNames: `${ pkg.name }.min.css`,
-          globals: { vue: 'Vue'}
+          globals: { vue: 'Vue', vueRouter: 'vue-router', elementPlus: 'element-plus'}
         }
       }
     },

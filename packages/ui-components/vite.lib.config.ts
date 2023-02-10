@@ -21,16 +21,18 @@ export default defineConfig(async ({ mode }) => {
         name: 'SeeMuiscUI'
       },
       rollupOptions: {
-        external: ['vue', /\.scss$/],
+        external: ['vue', /\.scss$/, 'vue-router', 'element-plus'],
+
         output: [
           {
             format: 'es',
             entryFileNames: '[name].mjs',
             preserveModules: true,
             preserveModulesRoot: 'src',
-            globals: {
-              vue: 'Vue'
-            }
+            // globals: {
+            //   vue: 'Vue'
+            // },
+            globals: { vue: 'Vue', vueRouter: 'vue-router', elementPlus: 'element-plus'}
           }
         ]
       }

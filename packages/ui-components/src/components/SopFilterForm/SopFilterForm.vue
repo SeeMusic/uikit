@@ -1,7 +1,29 @@
-<script setup lang="ts">
+<!-- <script setup lang="ts">
 import { ref } from 'vue';
+import { ElForm } from 'element-plus';
 
 const isFilterShow = ref(true);
+</script> -->
+
+<!--
+  依赖第三方组件时不能使用 setup 语法糖
+ -->
+<script lang="ts">
+import { defineComponent, ref } from 'vue';
+import { ElForm } from 'element-plus';
+
+export default defineComponent({
+  components: {
+    ElForm
+  },
+  setup() {
+    const isFilterShow = ref(true);
+
+    return {
+      isFilterShow
+    }
+  }
+});
 </script>
 
 <template>

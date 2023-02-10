@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
         name: 'UIComponents'
       },
       rollupOptions: {
-        external: ['vue'],
+        external: ['vue', 'vue-router', 'element-plus'],
         output: [
           {
             assetFileNames: `${ pkg.name }.es.css`
@@ -30,9 +30,7 @@ export default defineConfig(({ mode }) => {
             format: 'umd',
             entryFileNames: `${ pkg.name }.js`,
             name: `${ pkg.name }.js`,
-            globals: {
-              vue: 'Vue'
-            }
+            globals: { vue: 'Vue', vueRouter: 'vue-router', elementPlus: 'element-plus'}
           }
         ]
       }
