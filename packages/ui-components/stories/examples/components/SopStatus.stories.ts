@@ -20,7 +20,6 @@ const meta = {
     },
     color: {
       control: 'color',
-      defaultValue: 'pink',
       description: '支持16进制、Rgb、单词'
     }
   },

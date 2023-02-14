@@ -49,7 +49,7 @@ export default defineConfig({
     Components({
       resolvers: [
         // 自动导入
-        UIComponentsResolver()
+        UIComponentsResolver({ prefix: 'sop' })
       ],
       dts: 'src/dts/components.d.ts',
       extensions: ['vue'],

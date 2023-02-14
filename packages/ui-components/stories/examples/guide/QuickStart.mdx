@@ -1,4 +1,4 @@
-import { Meta } from '@storybook/blocks';
+import { Meta } from '@storybook/addon-docs';
 
 <Meta title="指南导读/快速上手" />
 
@@ -53,7 +53,7 @@ export default defineConfig({
     Components({
       resolvers: [
         // 自动导入
-        UIComponentsResolver()
+        UIComponentsResolver({ prefix: 'sop' })
       ],
       dts: 'src/dts/components.d.ts',
       extensions: ['vue'],

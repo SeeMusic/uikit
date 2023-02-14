@@ -2,7 +2,7 @@
 export const pageHeaderCode =
 `
 <template>
-  <PageHeader title="客户详情页" :back="-1">
+  <SopPageHeader title="客户详情页" :back="-1">
     <template #opt>
       <ElButton
         type="primary"
@@ -11,7 +11,7 @@ export const pageHeaderCode =
         + 新增
       </ElButton>
     </template>
-  </PageHeader>
+  </SopPageHeader>
 </template>
 `
 export const sopBasicInfoCode =
