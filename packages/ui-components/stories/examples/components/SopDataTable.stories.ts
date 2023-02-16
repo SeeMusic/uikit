@@ -54,7 +54,7 @@ export const Custom: Story = {
           <SopDataTableItem label="label-2">内容2...</SopDataTableItem>
           <SopDataTableItem label="label-3">内容3...</SopDataTableItem>
           <SopDataTableItem label="label-4">内容4...</SopDataTableItem>
-        </SopDataItem>
+        </SopDataTable>
       </SopCard>
     `
   }),
