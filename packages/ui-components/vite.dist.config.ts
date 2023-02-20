@@ -17,7 +17,7 @@ export default defineConfig(({ mode }) => {
         name: 'UIComponents'
       },
       rollupOptions: {
-        external: ['vue', 'vue-router', 'element-plus'],
+        external: ['vue', 'vue-router', 'element-plus', '@iconify/vue'],
         output: [
           {
             assetFileNames: `${ pkg.name }.es.css`

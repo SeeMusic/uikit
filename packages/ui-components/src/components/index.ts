@@ -6,3 +6,5 @@ export * from './SopDataTableItem';
 export * from './SopStatus';
 export * from './SopFilterForm';
 export * from './SopPageHeader';
+export * from './SopTheHeader';
+export * from './SopTheSidebar';

@@ -142,3 +142,21 @@ export const sopStatusCode =
 `
 <SopStatus type="all" text="信息" />
 `
+export const sopTheHeaderCode =
+`
+<SopTheHeader
+  logo="https://pics.kanjian.com/favicon/kanjian-logo-blue@2x.png"
+  subTitle="版权管理后台"
+  @logo-click="ElMessage.success('点击 logo...')"
+>
+  <template #rightOpt>
+    <ElPopover trigger="click" width="272px">
+      <template #reference>
+        <div style="width: 40px; height: 40px; border-radius: 50%; background-color: #0040FF;">
+        </div>
+      </template>
+      <ElButton>退出登录</ElButton>
+    </ElPopover>
+  </template>
+</SopTheHeader>
+`

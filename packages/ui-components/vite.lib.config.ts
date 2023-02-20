@@ -21,7 +21,7 @@ export default defineConfig(async ({ mode }) => {
         name: 'SeeMuiscUI'
       },
       rollupOptions: {
-        external: ['vue', /\.scss$/, 'vue-router', 'element-plus'],
+        external: ['vue', /\.scss$/, 'vue-router', 'element-plus', '@iconify/vue'],
 
         output: [
           {
@@ -67,11 +67,15 @@ export default defineConfig(async ({ mode }) => {
         apply: 'build',
         renderChunk(code) {
           // const RE = /\.\.\/\.\.\/ui-components\/src\/.*\/styles/;
-          const srcRE = /\.\.\/ui-components\/src/g;
-          const entryRE = /\.\/ui-components\/src/g;
+          // const srcRE = /\.\.\/ui-components\/src/g;
+          // const entryRE = /\.\/ui-components\/src/g;
+          const srcRE = /\.\.\/src\/components/g;
+          const entryRE = /\.\/src/g;
+
           if (code.match(srcRE)) {
             // const s = new MagicString(code).replace(RE, './styles');
-            const s = new MagicString(code).replace(srcRE, '../../../ui-components/lib');
+            // const s = new MagicString(code).replace(srcRE, '../../../ui-components/lib');
+            const s = new MagicString(code).replace(srcRE, '.');
             return {
               code: s.toString(),
               map: s.generateMap({ hires: true })
