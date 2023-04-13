@@ -12,3 +12,7 @@
 .el-checkbox-button__inner {
   font-size: var(--sop-font-size);
 }
+
+// TODO 选中再二次点击反选时，处于 focus 状态（is-focus)，需要移除边框
+// .el-checkbox-button.is-focus .el-checkbox-button__inner {
+// }
