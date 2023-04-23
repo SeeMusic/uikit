@@ -25,6 +25,7 @@ const meta: Meta<typeof ElButton> = {
   },
   args: {
     disabled: false,
+    text: false,
   },
 }
 

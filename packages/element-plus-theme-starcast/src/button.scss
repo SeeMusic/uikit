@@ -1,10 +1,5 @@
 .el-button {
-  --el-button-font-weight: 600;
-  // --el-button-text-color: var(--el-text-color-primary);
-
-  // --el-button-border-color: #999;
-  // --el-button-hover-text-color: var(--seemusic-text-hover);
-  // --el-button-hover-bg-color: none;
+  border-radius: 6px;
 
   // // TODO plain 支持
   // --el-button-hover-border-color: var(--seemusic-text-hover);
@@ -13,26 +8,35 @@
   --el-button-disabled-border-color: var(--el-disabled-border-color);
   --el-button-disabled-bg-color: var(--el-disabled-bg-color);
 
+  &--default {
+    --el-button-border-color: var(--seemusic-primary);
+    --el-button-text-color: var(--seemusic-primary);
+    --el-button-hover-bg-color: #FFF;
+    --el-button-hover-border-color: var(--seemusic-primary);
+    font-weight: 400;
+  }
+
   &--primary {
-    // --el-button-border-color: var(--el-color-primary);
-    // --el-button-hover-text-color: #FFF;
     --el-button-hover-border-color: var(--el-button-hover-bg-color);
     --el-button-hover-bg-color: var(--seemusic-text-hover);
-    // --el-button-active-text-color: #FFF;
-    // --el-button-active-border-color: var(--el-color-primary);
-    // --el-button-active-bg-color: var(--el-color-primary);
-
     --el-button-disabled-text-color: var(--el-disabled-text-color);
-    // primary 的按钮，边框和底色一致。
-    // TODO 使用 plain 模式区分
     --el-button-disabled-border-color: var(--el-disabled-bg-color);
+    --el-button-font-weight: 600;
   }
 
   &--large {
-    padding: 12px 32px;
+    --el-button-size: 48px;
+
+    padding-left: 32px;
+    padding-right: 32px;
     font-size: 18px;
+    border-radius: 8px;
   }
 
+  &.is-text {
+    --el-button-text-color: #333;
+    font-weight: 600;
+  }
   // TODO 验证
   // &--danger {
   //   --el-button-border-color: var(--el-color-danger);
