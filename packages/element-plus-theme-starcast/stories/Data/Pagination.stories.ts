@@ -30,7 +30,7 @@ export const Overview: Story = {
         :page-sizes="[100, 200, 300, 400]"
       >
         <span class="el-pagination__text">
-          共 100 张专辑，仅显示前 500 页结果
+          共 100 条结果
         </span>
       </ElPagination>
     `,
