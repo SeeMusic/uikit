@@ -35,8 +35,8 @@ export const Overview: Story = {
         <ElButton @click="showDialog">打开常规弹窗</ElButton>
         <ElDialog
           v-model="isShow"
-          title="是否确定创建补充合同？"
-          width="480px"
+          title="对话框标题"
+          width="540px"
         >
           <p>内容</p>
           <p>内容</p>
@@ -80,7 +80,7 @@ export const FooterSlot: Story = {
         <ElDialog
           v-model="isShow"
           title="是否确定创建补充合同？"
-          width="480px"
+          width="540px"
           align-center
         >
           <p>内容</p>
@@ -104,12 +104,14 @@ export const FooterSlot: Story = {
 
           <template #footer>
             <ElButton
+              size="large"
               @click="isShow = false"
             >
               取消
             </ElButton>
             <ElButton
               type="primary"
+              size="large"
               @click.prevent
             >
               确定

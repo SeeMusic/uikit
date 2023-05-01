@@ -36,6 +36,7 @@ export const Overview: Story = {
         <ElDrawer
           title="抽屉标题"
           v-model="isShow"
+          :size="540"
         >
           <p>抽屉内容</p>
           <p>抽屉内容</p>
@@ -71,6 +72,7 @@ export const FooterSlot: Story = {
         <ElDrawer
           title="抽屉标题"
           v-model="isShow"
+          :size="540"
         >
           <p>抽屉内容</p>
           <p>抽屉内容</p>
