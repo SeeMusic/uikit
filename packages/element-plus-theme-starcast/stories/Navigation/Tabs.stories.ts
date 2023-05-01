@@ -6,11 +6,6 @@ const meta: Meta<typeof ElTabs> = {
   title: 'Navigation/Tabs 标签页',
   component: ElTabs,
   argTypes: {
-    type: {
-      description: '类型',
-      control: { type: 'select' },
-      options: ['card', 'border-card', undefined],
-    },
     tabPosition: {
       description: 'Tab 位置',
       control: { type: 'select' },
@@ -18,7 +13,6 @@ const meta: Meta<typeof ElTabs> = {
     },
   },
   args: {
-    type: 'card',
     tabPosition: 'top',
   }
 }
