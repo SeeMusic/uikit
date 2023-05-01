@@ -6,12 +6,6 @@ const meta: Meta<typeof ElTag> = {
   title: 'Data/Tag 标签',
   component: ElTag,
   argTypes: {
-    type: {
-      control: {
-        type: 'select'
-      },
-      options: ['success', 'warning', 'danger', 'info', undefined]
-    },
     size: {
       control: {
         type: 'inline-radio'
@@ -21,6 +15,7 @@ const meta: Meta<typeof ElTag> = {
   },
   args: {
     closable: false,
+    size: 'large'
   }
 };
 

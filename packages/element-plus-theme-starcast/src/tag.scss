@@ -1,0 +1,14 @@
+.el-tag {
+  --el-tag-bg-color: rgba(0, 64, 255, .04);
+  --el-tag-border-color: var(--seemusic-border-disabled);
+  --el-tag-text-color: var(--el-text-color-primary);
+  --el-tag-font-size: 14px;
+
+  margin-right: 8px;
+  padding: 0 8px;
+
+  &.last-child {
+    margin-right: 0;
+  }
+}
+
