@@ -8,7 +8,7 @@
 Element Plus **经常** 会在版本更迭时 **破坏性** 的改变样式实现方式，这给自定义皮肤的使用带来了不少困扰，比如升级了 Element Plus，但是由于皮肤和组件库版本不匹配导致样式出问题。
 
 基于这些情况，本项目发布时的版本号更迭，遵循以下规则：
-* 和开发时使用的 Element Plus 版本号保持一致，如 `2.2.4`w
+* 和开发时使用的 Element Plus 版本号保持一致，如 `2.2.4`
 * **不保证** 兼容所有 Element Plus 版本，即可能 `2.2.4` 的下一个版本为 `2.2.7`
 * 如果某版本的实现有 BUG，可能会发布类似 `2.2.4-rc.1` 格式的版本去做修正（主版本和使用的 Element Plus 版本保持一致更重要）
 
@@ -22,13 +22,14 @@ npm run storybook
 
 ## 支持组件列表
 
-- [ ] Button
+- [x] Button
 - [ ] Cascader
 - [ ] Checkbox
 - [ ] CheckboxButton
 - [ ] CheckboxGroup
 - [ ] DatePicker
-- [ ] Drawer
+- [x] Dialog
+- [x] Drawer
 - [ ] Form
 - [ ] Input
 - [ ] Message
@@ -36,11 +37,11 @@ npm run storybook
 - [ ] Pagination
 - [ ] Popconfirm
 - [ ] Popover
-- [ ] Pagination
+- [x] Pagination
 - [ ] Radio
 - [ ] RadioButton
 - [ ] RadioGroup
 - [ ] Select
-- [ ] Table
-- [ ] Tabs
-- [ ] Tag
+- [x] Table
+- [x] Tabs
+- [x] Tag

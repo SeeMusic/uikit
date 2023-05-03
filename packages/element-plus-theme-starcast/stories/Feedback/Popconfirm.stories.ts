@@ -25,6 +25,8 @@ export const Overview:Story = {
         confirm-button-text="继续"
         cancel-button-text="取消"
         hide-icon
+        :show-arrow="false"
+        width="256"
         title="删除项目会导致其歌单一并被删除，确认继续吗？"
       >
         <template #reference>
