@@ -49,12 +49,14 @@ const BasicTemplate = (args) => ({
   template: `
     <ElForm
       v-bind="args"
+      require-asterisk-position="right"
     >
       <ElFormItem
         required
         label="文本"
       >
         <ElInput v-model="text" />
+        <div class="el-form-item__more">3 - 5 字符，必填。<a href="">详情</a></div>
       </ElFormItem>
 
       <ElFormItem

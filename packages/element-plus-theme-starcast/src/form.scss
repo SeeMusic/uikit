@@ -1,0 +1,69 @@
+.el-form-item {
+  margin-bottom: 24px;
+}
+
+.el-form-item__label {
+  font-weight: 600;
+}
+
+.el-form-item__content {
+  line-height: 24px;
+}
+
+.el-form.el-form--label-top {
+  .el-form-item {
+    .el-form-item__label {
+      padding-right: 0;
+      line-height: 24px;
+    }
+  }
+
+  & > .el-form-item:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.el-form-item.is-required:not(.is-no-asterisk).asterisk-right {
+  & > .el-form-item__label-wrap>.el-form-item__label:after,
+  & > .el-form-item__label:after {
+    color: var(--seemusic-primary);
+  }
+}
+
+// TODO is-error
+
+/*
+ * 扩展元素，类似 form-item footer 概念的容器，用来存放 “更多” 类操作链接、描述等信息
+ */
+.el-form-item__more {
+  margin-top: 8px;
+  width: 100%;
+
+  a {
+    color: var(--seemusic-primary);
+  }
+}
+
+.el-form-item__content .el-form-item__more:first-child {
+  margin-top: 0;
+}
+
+
+// // 选项组垂直列表
+.option-list {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: 100%; // el-form-content 设置了 flex。如果覆写 block 的话可以移除
+
+  .el-radio,
+  .el-checkbox {
+    margin-right: 0;
+    padding: 8px 16px;
+    box-shadow: inset 0 -1px 0 0 var(--el-disabled-bg-color);
+
+    &:hover {
+      background: rgba(0, 64, 255, .08);
+    }
+  }
+}
