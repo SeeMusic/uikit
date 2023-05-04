@@ -1,9 +1,7 @@
 /**
  * TODO
  *
- * 1. type：warning | danger 样式
- * 2. round、circle、loading 属性支持及样例
- * 3. 点击后鼠标移出，颜色需要重置（目前 active 在离开后不会取消）
+ * 点击后鼠标移出，颜色需要重置（目前 active 在离开后不会取消）
  */
 
 import { ElButton } from 'element-plus';
@@ -16,11 +14,11 @@ const meta: Meta<typeof ElButton> = {
   argTypes: {
     type: {
       control: { type: 'select'},
-      options: ['primary', 'default', 'warning', 'danger', 'info', 'success'],
+      options: ['primary', undefined],
     },
     size: {
       control: { type: 'select' },
-      options: ['large', 'default', 'small'],
+      options: ['large', 'default'],
     },
   },
   args: {

@@ -22,10 +22,10 @@ export const Overview:Story = {
     template: `
       <ElPopover
         placement="bottom"
-        title="Title"
-        :width="200"
+        title="标题"
+        :width="220"
         trigger="click"
-        content="this is content, this is content, this is content"
+        content="内容内容，内容内容，内容内容"
       >
         <template #reference>
           <ElButton>点击激活</ElButton>

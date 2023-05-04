@@ -32,12 +32,11 @@ npm run storybook
 - [x] Drawer
 - [ ] Form
 - [ ] Input
-- [ ] Message
+- [x] Message
 - [ ] Option
-- [ ] Pagination
-- [ ] Popconfirm
-- [ ] Popover
 - [x] Pagination
+- [x] Popconfirm
+- [x] Popover
 - [ ] Radio
 - [ ] RadioButton
 - [ ] RadioGroup
