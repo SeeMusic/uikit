@@ -4,8 +4,6 @@
   --el-input-border-color: #DDD;
   --el-input-hover-border-color: var(--seemusic-text-hover);
   --el-input-border: 1px solid var(--el-input-border-color);
-
-  font-size: var(--sop-font-size);
 }
 
 .el-input-group__append,
@@ -22,5 +20,5 @@
 
 
 .el-textarea__inner {
-  padding: 5px 7px;
+  padding: 4px 9px;
 }

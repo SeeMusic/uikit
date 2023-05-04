@@ -31,7 +31,7 @@ npm run storybook
 - [x] Dialog
 - [x] Drawer
 - [x] Form
-- [ ] Input
+- [x] Input
 - [x] Message
 - [ ] Option
 - [x] Pagination
