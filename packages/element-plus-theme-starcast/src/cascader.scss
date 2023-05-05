@@ -1,0 +1,8 @@
+
+.el-cascader-node {
+  &.in-active-path,
+  &.is-active,
+  &.is-selectable.in-checked-path {
+    font-weight: 400;
+  }
+}

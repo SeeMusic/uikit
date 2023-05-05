@@ -23,7 +23,7 @@ npm run storybook
 ## 支持组件列表
 
 - [x] Button
-- [ ] Cascader
+- [x] Cascader
 - [x] Checkbox
 - [x] CheckboxButton
 - [x] CheckboxGroup
