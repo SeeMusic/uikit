@@ -1,0 +1,53 @@
+.el-pagination {
+  --el-pagination-border-radius: 4px;
+  --el-pagination-button-bg-color: none;
+
+  justify-content: flex-end;
+
+  position: relative;
+
+  &.is-background {
+    .btn-next,
+    .btn-prev,
+    .el-pager li {
+      border-radius: var(--el-pagination-border-radius);
+      color: var(--el-text-color-primary);
+    }
+
+    .btn-prev:disabled,
+    .btn-next:disabled {
+      background: none;
+    }
+
+    .el-pager li:not(.is-disabled).is-active {
+      font-weight: 400;
+    }
+
+    // size trigger
+    .el-pagination__sizes.is-last {
+      margin-left: 8px;
+    }
+  }
+
+  // size trigger
+  .el-select .el-input {
+    width: 96px;
+  }
+}
+
+.el-pagination__text {
+  position: absolute;
+  left: 0;
+}
+
+.el-pagination__sizes {
+  margin: 0;
+}
+
+.el-pagination__editor {
+  min-width: 48px;
+}
+
+.el-pagination__editor.el-input {
+  width: 48px;
+}
