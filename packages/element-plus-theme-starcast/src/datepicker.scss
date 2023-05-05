@@ -1,0 +1,117 @@
+.el-date-picker,
+.el-date-range-picker {
+  --el-datepicker-header-text-color: var(--seemusic-info);
+  --el-datepicker-inrange-bg-color: rgba(0, 64, 255, .08);
+  --el-datepicker-inrange-hover-bg-color: rgba(0, 64, 255, .08);
+}
+
+.el-date-table {
+  margin-left: 16px;
+  margin-right: 16px;
+  border-spacing: 0;
+  font-size: 14px;
+
+  th,
+  td {
+    padding: 0;
+    height: 32px;
+  }
+
+  th {
+    border-bottom: 0;
+  }
+
+  td {
+    .el-date-table-cell {
+      padding: 0;
+      height: 32px;
+
+      // 文本覆写，原本用了 left: 50% 和 transform: translateX(-50%) 做横向居中
+      .el-date-table-cell__text {
+        // position: static;
+        // left: 0;
+        margin: 0 auto;
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        // text-align: center;
+        // transform: none;
+        border-radius: 0;
+      }
+    }
+  }
+
+  // 范围开始日和结束日
+  td.start-date,
+  td.end-date {
+    .el-date-table-cell {
+      margin: 0;
+      border-radius: 0;
+    }
+  }
+}
+
+.el-date-picker__header-label,
+.el-date-range-picker__header div {
+  font-size: 14px;
+  line-height: 32px;
+}
+
+.el-picker-panel__icon-btn {
+  margin-top: 9px;
+}
+
+// 单个日期选择内容区
+.el-date-picker__header {
+  margin: 0;
+  padding: 0 16px;
+  height: 32px;
+  border-bottom: 1px solid var(--seemusic-bg-disabled);
+}
+
+.el-date-picker .el-picker-panel__content {
+  margin: 8px 16px;
+  width: auto;
+
+  .el-date-table {
+    margin: 0;
+  }
+}
+
+// 范围选择
+.el-date-range-picker__header {
+  padding: 0 16px;
+  margin: 0 -16px;
+  height: 32px;
+  border-bottom: 1px solid var(--seemusic-bg-disabled);
+
+  div {
+    line-height: 32px;
+  }
+
+  .el-picker-panel__icon-btn {
+    margin-top: 9px;
+  }
+}
+
+.el-date-range-picker__content {
+  padding: 0 16px 8px;
+  width: 323px;
+
+  &.is-left {
+    border-right: 0;
+  }
+
+  .el-date-table {
+    margin: 0;
+  }
+}
+
+// 浮层
+.el-picker__popper {
+  .el-popper__arrow {
+    display: none;
+  }
+}
+
+

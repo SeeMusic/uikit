@@ -27,6 +27,7 @@ const Template = (args) => ({
     <div>
       <ElDatePicker
         v-model="basic"
+        placeholder="Placeholder Text"
       />
       <p>{{ basic }}</p>
     </div>

@@ -27,7 +27,7 @@ npm run storybook
 - [x] Checkbox
 - [x] CheckboxButton
 - [x] CheckboxGroup
-- [ ] DatePicker
+- [x] DatePicker
 - [x] Dialog
 - [x] Drawer
 - [x] Form
