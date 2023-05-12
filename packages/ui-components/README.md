@@ -61,3 +61,17 @@ export default defineConfig({
   ],
 });
 ```
+
+## `Volar` 支持
+
+如果您使用 Volar，请在 tsconfig.json 中通过 compilerOptions.type 指定全局组件类型。
+
+```json
+// tsconfig.json
+{
+  "compilerOptions": {
+    // ...
+    "types": ["@seemusic/ui-components/lib/volar"]
+  }
+}
+```

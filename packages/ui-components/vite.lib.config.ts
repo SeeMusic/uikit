@@ -7,6 +7,9 @@ import MagicString from 'magic-string';
 import mkdirp from 'mkdirp';
 import dts from 'vite-plugin-dts';
 import pkg from './package.json';
+import { genComponentsType } from './scripts/gen-type';
+
+genComponentsType();
 
 export default defineConfig(async ({ mode }) => {
   Object.assign(process.env, loadEnv(mode, process.cwd()));
