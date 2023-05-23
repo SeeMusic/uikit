@@ -9,7 +9,8 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "storybook:build": "storybook build",
-    "preview": "vite preview --outDir storybook-static"
+    "preview": "vite preview --outDir storybook-static",
+    "publish": "wrangler pages publish storybook-static --project-name element-plus-theme-starcast"
   },
   "peerDependencies": {
     "element-plus": "2.3.4"
