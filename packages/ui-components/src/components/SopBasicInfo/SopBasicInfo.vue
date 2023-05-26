@@ -18,8 +18,11 @@ const isOperationShow = computed(() => {
 <template>
   <div
     class="sop-basic-info"
+    :style="{
+      padding: $slots.cover ? '0 0 0 88px' : '0'
+    }"
   >
-    <div class="sop-basic-info__cover">
+    <div v-if="$slots.cover" class="sop-basic-info__cover">
       <slot name="cover" />
     </div>
     <p class="sop-basic-info__title">
