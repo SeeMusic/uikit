@@ -1,0 +1,72 @@
+.el-button {
+  /**
+   * 普通状态
+   */
+  // 按钮背景不再使用固定颜色，而是使用模糊背景
+  --el-button-bg-color: rgba(0, 0, 0, .02);
+  --el-button-font-weight: 400;
+  --el-button-text-color: var(--el-text-color-primary);
+  --el-button-border-color: rgba(0, 0, 0, .16);
+
+  /**
+   * hover
+   */
+  --el-button-hover-text-color: var(--el-text-color-primary);
+  --el-button-hover-bg-color: var(--el-button-bg-color);
+  --el-button-hover-border-color: var(--seemusic-text-hover);
+
+  /**
+   * active
+   */
+   --el-button-active-bg-color: rgba(0, 0, 0, .1);
+
+  /**
+   * disabled
+   */
+  --el-button-disabled-border-color: var(--el-disabled-border-color);
+  --el-button-disabled-bg-color: var(--el-disabled-bg-color);
+
+  padding: 0 12px;
+  backdrop-filter: blur(4px);
+
+  & + & {
+    margin-left: 8px;
+  }
+
+  // 边界
+  // ElButton 点击后，按钮还是处于 focus 状态，哪怕鼠标移出后也不会取消，这会导致按钮点击后一直停留在 focus 状态，需要覆写
+  // 自带的样式，focus 和 hover 的颜色相同
+  // 修改：改为和常规状态应该一致，且不同类型的按钮需要重复定义
+
+  &:focus {
+    --el-button-hover-bg-color: var(--el-button-bg-color);
+    --el-button-hover-border-color: var(--el-button-border-color);
+
+    &:hover {
+      --el-button-hover-bg-color: var(--el-button-bg-color);
+      --el-button-hover-border-color: var(--seemusic-text-hover);
+    }
+  }
+
+  &--primary {
+    --el-button-bg-color: rgba(0, 0, 0, .9);
+    --el-button-text-color: #FFF;
+
+    --el-button-hover-text-color: #FFF;
+    --el-button-hover-bg-color: var(--seemusic-text-hover);
+    --el-button-hover-border-color: var(--seemusic-text-hover);
+
+    --el-button-active-text-color: #FFF;
+    --el-button-active-border-color: var(--el-color-primary);
+    --el-button-active-bg-color: var(--el-color-primary);
+
+    --el-button-disabled-text-color: var(--el-disabled-text-color);
+    --el-button-disabled-border-color: var(--el-disabled-bg-color);
+
+    &:focus:hover {
+      --el-button-hover-bg-color: var(--seemusic-text-hover);
+    }
+  }
+
+  // @todo small 的尺寸定义
+}

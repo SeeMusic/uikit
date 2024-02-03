@@ -1,0 +1,41 @@
+@import "@seemusic/styles/src/themes/element-plus-theme-sop.scss";
+
+:root {
+  --el-border-radius-base: 0;
+
+  --sop-font-size: 14px;
+
+  --icon-default-size: 24px;
+
+  // 主色彩改 #333 考虑换 regular
+  --el-text-color-primary: #333;
+  // --el-text-color-regular: var(--seemusic-text-normal);
+
+  --el-color-primary: var(--seemusic-primary);
+
+  --el-disabled-bg-color: var(--seemusic-bg-disabled);
+  --el-disabled-border-color: var(--seemusic-border-disabled);
+  --el-disabled-text-color: var(--seemusic-text-disabled);
+
+  --el-color-danger: var(--seemusic-danger);
+
+  --el-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --el-bg-color-overlay: rgba(255, 255, 255, 0.6);
+}
+
+@import "button";
+@import "checkbox";
+@import "datepicker";
+@import "dialog";
+@import "drawer";
+@import "form";
+@import "input";
+@import "inputnumber";
+@import "pagination";
+@import "popconfirm";
+@import "popover";
+@import "radio";
+@import "select";
+@import "tab";
+@import "table";
+@import "tag";

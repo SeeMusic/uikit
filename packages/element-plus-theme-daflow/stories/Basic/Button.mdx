@@ -1,0 +1,16 @@
+import { Meta } from '@storybook/blocks';
+import ButtonStories from './Button.stories';
+
+<Meta of={ButtonStories} />
+
+## 参数说明
+
+### `type`
+
+* 当前设计规范，只使用了 `primary` 和 `default`。
+
+
+### `size`
+
+* 当前设计规范，表单中只使用了 `large`。其他尺寸的没有做兼容
+* ElPopconfirm 中内嵌的操作按钮，尺寸写死了 `small` 且不可修改；按照设计规范，覆写 CSS 强制统一成 `default`

@@ -1,0 +1,27 @@
+.el-select {
+  --el-select-border-color-hover: var(--seemusic-text-hover);
+  --el-select-font-size: var(--sop-font-size);
+  --el-select-input-font-size: var(--sop-font-size);
+}
+
+.el-select-dropdown__item {
+  padding: 0 32px 0 8px;
+  font-size: var(--sop-font-size);
+  color: var(--el-text-color-primary);
+
+  &.selected {
+    font-weight: 400;
+  }
+}
+
+/* 多选模式 */
+.el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
+  right: 8px;
+}
+
+// TODO
+// 多选模式内的 ElTag 强行指定了 { type: info }，而 .el-tag--info 拥有和缺省类型不一样的样式。
+// 需要考虑要不要在 select 内，把 el-tag--info 覆写成和缺省类型一样的外观
+// .el-select .el-tag.el-tag--info {
+//   background-color: #E6F0FF;
+// }

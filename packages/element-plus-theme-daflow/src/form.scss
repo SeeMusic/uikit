@@ -1,0 +1,73 @@
+.el-form {
+  --el-form-label-font-size: var(--sop-font-size);
+}
+
+.el-form-item {
+  --font-size: var(--sop-font-size);
+
+  margin-bottom: 16px;
+}
+
+.el-form.el-form--label-top>.el-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.el-form-item__label {
+  color: var(--el-text-color-primary);
+  font-weight: 600;
+}
+
+.el-form-item__content {
+  line-height: 1.5;
+}
+
+.el-form--label-top .el-form-item .el-form-item__label {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.el-form--default.el-form--label-top .el-form-item .el-form-item__label {
+  margin-bottom: 4px;
+  padding: 0;
+  line-height: 1.5;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk) {
+  & > .el-form-item__label-wrap>.el-form-item__label:before,
+  & > .el-form-item__label:before {
+    margin-left: 3px;
+    margin-right: 0;
+    color: var(--el-color-primary);
+  }
+}
+
+// 类似 form-item footer 的容器
+.el-form-item__more {
+  margin-top: 8px;
+  width: 100%;
+}
+
+.el-form-item__content .el-form-item__more:first-child {
+  margin-top: 0;
+}
+
+
+// 选项组垂直列表
+.option-list {
+  display: flex;
+  flex-direction: column;
+  align-items: initial;
+  width: 100%; // el-form-content 设置了 flex。如果覆写 block 的话可以移除
+
+  .el-radio,
+  .el-checkbox {
+    margin-right: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    box-shadow: inset 0 -1px 0 0 var(--el-disabled-bg-color);
+
+    &:nth-child(even) {
+      background: #FAFAFA;
+    }
+  }
+}

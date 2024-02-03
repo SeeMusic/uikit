@@ -1,0 +1,18 @@
+.el-checkbox {
+  --el-checkbox-font-size: var(--sop-font-size);
+  --el-checkbox-text-color: var(---el-text-color-primary);
+  --el-checkbox-font-weight: 400;
+
+  --el-checkbox-input-border: 1px solid var(--seemusic-info);
+  --el-checkbox-border-radius: 3px;
+
+  margin-right: 24px;
+}
+
+.el-checkbox-button__inner {
+  font-size: var(--sop-font-size);
+}
+
+// TODO 选中再二次点击反选时，处于 focus 状态（is-focus)，需要移除边框
+// .el-checkbox-button.is-focus .el-checkbox-button__inner {
+// }

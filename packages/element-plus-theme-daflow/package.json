@@ -1,0 +1,56 @@
+{
+  "name": "@seemusic/element-plus-theme-daflow",
+  "private": false,
+  "version": "2.5.3",
+  "description": "Element Plus Theme For daflow.ai",
+  "main": "src/index.scss",
+  "author": "cuiguojie@kanjian.com",
+  "scripts": {
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build",
+    "storybook:build": "storybook build",
+    "preview": "vite preview --outDir storybook-static"
+  },
+  "peerDependencies": {
+    "element-plus": "2.5.3"
+  },
+  "dependencies": {
+    "@seemusic/styles": "workspace:^"
+  },
+  "devDependencies": {
+    "@seemusic/eslint-config-vue3": "^0.0.2",
+    "@storybook/addon-essentials": "^7.6.12",
+    "@storybook/addon-interactions": "^7.6.12",
+    "@storybook/addon-links": "^7.6.12",
+    "@storybook/blocks": "^7.6.12",
+    "@storybook/testing-library": "^0.1.0",
+    "@storybook/vue3": "^7.6.12",
+    "@storybook/vue3-vite": "^7.6.12",
+    "@tsconfig/node18": "^18.2.2",
+    "@types/node": "^20.11.16",
+    "@vitejs/plugin-vue": "^4.6.2",
+    "@vue/eslint-config-typescript": "^11.0.3",
+    "@vue/tsconfig": "^0.5.1",
+    "element-plus": "2.5.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-storybook": "^0.6.15",
+    "eslint-plugin-vue": "^9.21.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.70.0",
+    "storybook": "^7.6.12",
+    "typescript": "~5.3.3",
+    "vite": "^5.0.12",
+    "vue": "^3.4.15",
+    "vue-tsc": "^1.8.27"
+  },
+  "bugs": {
+    "url": "https://github.com/SeeMusic/uikit/issues"
+  },
+  "homepage": "https://github.com/SeeMusic/uikit/packages/element-plus-theme-sop",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeeMusic/uikit.git"
+  }
+}

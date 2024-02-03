@@ -1,0 +1,9 @@
+import { Meta } from '@storybook/blocks';
+import RadioStories from './Radio.stories';
+
+<Meta of={RadioStories} />
+
+## 设计规范
+
+* 所有的单选 `ElRadio`，统一使用按钮形式呈现，即 `<ElRadioGroup>` 搭配 `<ElRadioButton>` 使用。
+* 默认情况下，规定单选使用大尺寸。如果没有搭配外层的 `<ElForm>` 或者 `<ElFormItem>` 使用，需要设定 `<ElRadioGroup size='large'>`
