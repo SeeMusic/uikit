@@ -1,0 +1,22 @@
+import { Meta } from '@storybook/blocks';
+import SelectStories from './Select.stories';
+
+<Meta of={SelectStories} />
+
+设定中，`ElSelect` 的下拉弹窗，需要紧邻 `ElSelect` 本身，而不是像常规 Popover 一样有箭头和间隙。箭头已经在全局样式中移除，但是间隙还需要手动处理：
+
+```
+<ElSelect
+  :popper-options="{
+    modifiers:[
+      {
+        name: 'offset',
+        options: {
+          offset: [0, 0],
+        }
+      }
+    ]
+  }"
+>
+```
+

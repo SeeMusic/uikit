@@ -53,13 +53,13 @@ const BasicTemplate = (args) => ({
     >
       <ElFormItem
         required
-        label="文本"
+        label="Input"
       >
-        <ElInput v-model="text" />
+        <ElInput v-model="text" placeholder="Placeholder" />
       </ElFormItem>
 
       <ElFormItem
-        label="文本域"
+        label="Textarea"
       >
         <ElInput
           v-model="textarea"
@@ -72,26 +72,71 @@ const BasicTemplate = (args) => ({
       </ElFormItem>
 
       <ElFormItem
-        label="选择器"
+        label="RadioButton"
+      >
+        <ElRadioGroup
+          v-model="isChecked"
+          v-bind="args"
+        >
+          <ElRadioButton
+            :label="1"
+          >
+            Option A
+          </ElRadioButton>
+          <ElRadioButton
+            :label="2"
+          >
+            Option b
+          </ElRadioButton>
+          <ElRadioButton
+            :label="3"
+          >
+            Option C
+          </ElRadioButton>
+        </ElRadioGroup>
+      </ElFormItem>
+
+      <ElFormItem
+        label="Selector"
       >
         <ElSelect
           v-model="typeId"
+          :popper-options="{
+            modifiers:[
+              {
+                name: 'offset',
+                options: {
+                  offset: [0, 0],
+                }
+              }
+            ]
+          }"
         >
-          <ElOption label="选项 1" :value="1" />
-          <ElOption label="选项 2" :value="2" />
+          <ElOption label="Option A" :value="1" />
+          <ElOption label="Option B" :value="2" />
         </ElSelect>
       </ElFormItem>
 
       <ElFormItem
-        label="选择器 - 多选"
+        label="Selector - multiple"
       >
         <ElSelect
           v-model="typeIds"
           multiple
           collapse-tags
+          :popper-options="{
+            modifiers:[
+              {
+                name: 'offset',
+                options: {
+                  offset: [0, 0],
+                }
+              }
+            ]
+          }"
         >
-          <ElOption label="选项 1" :value="1" />
-          <ElOption label="选项 2" :value="2" />
+          <ElOption label="Option A" :value="1" />
+          <ElOption label="Option B" :value="2" />
         </ElSelect>
       </ElFormItem>
 

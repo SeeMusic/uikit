@@ -11,14 +11,14 @@ const meta: Meta<typeof ElInput> = {
     type: {
       options: ['text', 'password', 'textarea'],
       control: {
-        type: 'radio',
-      },
-    },
+        type: 'radio'
+      }
+    }
   },
   args: {
-    disabled: false,
-  },
-}
+    disabled: false
+  }
+};
 
 export default meta;
 
@@ -27,52 +27,52 @@ type Story = StoryObj<typeof ElInput>;
 const OverviewTemplate = (args) => ({
   components: {
     ElForm,
-    ElInput,
+    ElInput
   },
   data() {
     return {
-      value: '',
+      value: ''
     };
   },
   computed: {
     placeholder() {
-      return args.type === 'password' ? '请输入密码' : '请输入内容';
-    },
+      return args.type === 'password' ? 'Password' : 'Please Input';
+    }
   },
   setup() {
     return { args };
   },
   template: `
-    <ElForm>
+    <ElForm size="large">
       <ElInput
         :placeholder="placeholder"
         v-model="value"
         v-bind="args"
       />
     </ElForm>
-  `,
+  `
 });
 
 export const Overview:Story = {
   render: OverviewTemplate,
   args: {
-    type: 'text',
+    type: 'text'
   }
 };
 
 export const Disabled:Story = {
   render: OverviewTemplate,
   args: {
-    disabled: true,
+    disabled: true
   }
-}
+};
 
 export const Password:Story = {
   render: OverviewTemplate,
   args: {
-    type: 'password',
+    type: 'password'
   }
-}
+};
 
 export const Textarea:Story = {
   render: OverviewTemplate,
@@ -80,35 +80,38 @@ export const Textarea:Story = {
     type: 'textarea',
     autosize: {
       minRows: 3,
-      maxRows: 6,
+      maxRows: 6
     }
   }
-}
+};
 
 const SlotTemplate = (args) => ({
   components: {
-    ElInput,
+    ElInput
   },
   setup() {
     return { args };
   },
   data() {
     return {
-      value: '',
+      value: ''
     };
   },
   template: `
-    <ElInput
-      placeholder="请输入内容"
-      v-model="value"
-      v-bind="args"
-    >
-      <template #prepend>Https://</template>
-      <template #append>.com</template>
-    </ElInput>
-  `,
+    <ElForm>
+      <ElInput
+        size="large"
+        placeholder="Please Input"
+        v-model="value"
+        v-bind="args"
+      >
+        <template #prepend>Https://</template>
+        <template #append>.com</template>
+      </ElInput>
+    </ElForm>
+  `
 });
 
 export const Slot:Story = {
-  render: SlotTemplate,
-}
+  render: SlotTemplate
+};

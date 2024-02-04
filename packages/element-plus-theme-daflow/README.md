@@ -22,25 +22,24 @@ npm run storybook
 
 ## 支持组件列表
 
-- [ ] Button
+- [x] Button
 - [ ] Cascader
-- [ ] Checkbox
 - [ ] CheckboxButton
 - [ ] CheckboxGroup
 - [ ] DatePicker
 - [ ] Drawer
-- [ ] Form
-- [ ] Input
+- [x] Form
+- [x] Input
 - [ ] Message
-- [ ] Option
+- [x] Option
 - [ ] Pagination
 - [ ] Popconfirm
 - [ ] Popover
 - [ ] Pagination
-- [ ] Radio
-- [ ] RadioButton
-- [ ] RadioGroup
+- [x] Radio
+- [x] RadioButton
+- [x] RadioGroup
 - [ ] Select
-- [ ] Table
+- [x] Table
 - [ ] Tabs
 - [ ] Tag

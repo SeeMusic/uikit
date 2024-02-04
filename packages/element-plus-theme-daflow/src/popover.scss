@@ -1,6 +1,6 @@
 .el-popover {
-  --el-popover-font-size: var(--sop-font-size);
-  --el-popover-title-font-size: var(--sop-font-size);
+  // --el-popover-font-size: var(--sop-font-size);
+  // --el-popover-title-font-size: var(--sop-font-size);
   --el-popover-border-radius: var(--el-border-radius-base);
 
   // --el-popover-padding: 16px;
@@ -9,18 +9,18 @@
   // --el-popover-border-color
   // --el-popover-padding-large ? 哪里用了
 
-  &.el-popper {
-    // line-height: 1.5;
-    // color: var(--el-text-color-primary);
+  // &.el-popper {
+  //   line-height: 1.5;
+  //   color: var(--el-text-color-primary);
 
-    .el-popper__arrow {
-      // display: none;
-    }
-  }
+  //   .el-popper__arrow {
+  //     display: none;
+  //   }
+  // }
 
-  &.is-light {
+  // &.is-light {
 
-  }
+  // }
 }
 
 .el-popover__title {

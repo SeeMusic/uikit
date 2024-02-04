@@ -1,7 +1,7 @@
 {
   "name": "@seemusic/element-plus-theme-daflow",
   "private": false,
-  "version": "2.5.3",
+  "version": "2.5.3-alpha.1",
   "description": "Element Plus Theme For daflow.ai",
   "main": "src/index.scss",
   "author": "cuiguojie@kanjian.com",

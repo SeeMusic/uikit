@@ -1,6 +1,7 @@
-// TODO ElTag 的排列实现有问题，会折行。
+// @todo 边界问题
+// 多选选中后展示的 ElTag 数量很多时，会折行。
 // 当前用 .el-tag + .el-tag 控制左边距，导致换行的第一个元素左边有空白
-// 需要参考 element 的写法，改成 last-child 元素 margin-right 归 0 的写法
+// 可以参考 element 的写法，改成全部右边距，但是同级的 last-child 元素 margin-right 归 0 的写法
 
 import { ElSelect, ElOption } from 'element-plus';
 
@@ -10,7 +11,8 @@ const meta: Meta<typeof ElSelect> = {
   title: 'Form/Select 选择器',
   component: ElSelect,
   args: {
-    disabled: false
+    disabled: false,
+    size: 'large'
   }
 };
 
@@ -62,6 +64,16 @@ const Template = (args) => ({
       v-model="optionArea"
       v-bind="args"
       placeholder="请选择"
+      :popper-options="{
+        modifiers:[
+          {
+            name: 'offset',
+            options: {
+              offset: [0, 0],
+            }
+          }
+        ]
+      }"
     >
       <ElOption
         v-for="(item, index) in options"

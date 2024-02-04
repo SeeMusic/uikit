@@ -3,12 +3,11 @@
 :root {
   --el-border-radius-base: 0;
 
-  --sop-font-size: 14px;
-
   --icon-default-size: 24px;
 
-  // 主色彩改 #333 考虑换 regular
+  // 主色彩先写死 #333，考虑要不要引用 seemusic-text-regular
   --el-text-color-primary: #333;
+  --el-text-color-secondary: #999;
   // --el-text-color-regular: var(--seemusic-text-normal);
 
   --el-color-primary: var(--seemusic-primary);
@@ -20,13 +19,13 @@
   --el-color-danger: var(--seemusic-danger);
 
   --el-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  --el-font-size-base: 14px;
   --el-bg-color-overlay: rgba(255, 255, 255, 0.6);
 }
 
 @import "button";
 @import "checkbox";
 @import "datepicker";
-@import "dialog";
 @import "drawer";
 @import "form";
 @import "input";
@@ -39,3 +38,16 @@
 @import "tab";
 @import "table";
 @import "tag";
+
+.el-popper {
+  --el-popover-border-radius: var(--el-border-radius-base);
+
+  font-family: var(--el-font-family);
+}
+
+.el-message {
+  --el-message-close-size: 18px;
+  --el-message-close-hover-color: #000;
+
+  font-family: var(--el-font-family);
+}

@@ -1,11 +1,11 @@
 import { ElDrawer, ElButton } from 'element-plus';
 
-import type { StoryObj, Meta } from "@storybook/vue3";
+import type { StoryObj, Meta } from '@storybook/vue3';
 
 const meta: Meta<typeof ElDrawer> = {
   title: 'Feedback/Drawer 抽屉',
-  component: ElDrawer,
-}
+  component: ElDrawer
+};
 
 export default meta;
 
@@ -15,17 +15,17 @@ export const Overview: Story = {
   render: (args) => ({
     components: {
       ElDrawer,
-      ElButton,
+      ElButton
     },
     data() {
       return {
-        isShow: false,
+        isShow: false
       };
     },
     methods: {
       showDrawer() {
         this.isShow = true;
-      },
+      }
     },
     setup() {
       return { args };
@@ -34,15 +34,17 @@ export const Overview: Story = {
       <div>
         <ElButton @click="showDrawer">打开常规抽屉</ElButton>
         <ElDrawer
-          title="抽屉标题"
+          title="Title"
           v-model="isShow"
+          :modal="false"
+          direction="ltr"
         >
           <p>抽屉内容</p>
           <p>抽屉内容</p>
           <p>抽屉内容</p>
         </ElDrawer>
       </div>
-    `,
+    `
   })
 };
 
@@ -50,17 +52,17 @@ export const FooterSlot: Story = {
   render: (args) => ({
     components: {
       ElDrawer,
-      ElButton,
+      ElButton
     },
     data() {
       return {
-        isShow: false,
+        isShow: false
       };
     },
     methods: {
       showDrawer() {
         this.isShow = true;
-      },
+      }
     },
     setup() {
       return { args };
@@ -69,7 +71,7 @@ export const FooterSlot: Story = {
       <div>
         <ElButton @click="showDrawer">打开带 footer 的抽屉</ElButton>
         <ElDrawer
-          title="抽屉标题"
+          title="Title"
           v-model="isShow"
         >
           <p>抽屉内容</p>
@@ -105,11 +107,11 @@ export const FooterSlot: Story = {
           <p>抽屉内容</p>
 
           <template #footer>
-            <ElButton>退出</ElButton>
-            <ElButton type="primary">递交</ElButton>
+            <ElButton size="large">Cancel</ElButton>
+            <ElButton type="primary" size="large">Submit</ElButton>
           </template>
         </ElDrawer>
       </div>
-    `,
+    `
   })
 };

@@ -44,17 +44,17 @@ const ButtonGroupTemplate = (args) => ({
       <ElRadioButton
         :label="1"
       >
-        唱片公司或厂牌
+        Option A
       </ElRadioButton>
       <ElRadioButton
         :label="2"
       >
-        个人工作室
+        Option b
       </ElRadioButton>
       <ElRadioButton
         :label="3"
       >
-        版权代理机构
+        Option C
       </ElRadioButton>
     </ElRadioGroup>
   `

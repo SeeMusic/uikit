@@ -1,10 +1,10 @@
 import { ElMessage, ElButton } from 'element-plus';
 
-import type { StoryObj, Meta } from "@storybook/vue3";
+import type { StoryObj, Meta } from '@storybook/vue3';
 
 const meta: Meta<typeof ElMessage> = {
-  title: 'Feedback/Message 弹出框',
-}
+  title: 'Feedback/Message 弹出框'
+};
 
 export default meta;
 
@@ -13,7 +13,7 @@ type Story = StoryObj<typeof ElMessage>;
 export const Overview: Story = {
   render: (args) => ({
     components: {
-      ElButton,
+      ElButton
     },
     setup() {
       return { args };
@@ -22,16 +22,17 @@ export const Overview: Story = {
       openError() {
         ElMessage.error({
           showClose: true,
-          message: '失败信息文本'
+          message: 'Failed!',
+          duration: 0
         });
       },
       openSuccess() {
-        ElMessage.success('成功信息文本')
-      },
+        ElMessage.success('Successful!');
+      }
     },
     template: `
       <ElButton @click="openError">显示失败信息</ElButton>
       <ElButton @click="openSuccess">显示成功信息</ElButton>
-    `,
+    `
   })
-}
+};

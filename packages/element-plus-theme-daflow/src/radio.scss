@@ -1,5 +1,4 @@
 .el-radio {
-  --el-radio-font-size: var(--sop-font-size);
   --el-radio-font-weight: 400;
   --el-radio-text-color: var(--el-text-color-primary);
   --el-radio-input-width: 16px;
@@ -11,7 +10,7 @@
 }
 
 .el-radio__input.is-checked {
-  &+.el-radio__label {
+  & + .el-radio__label {
     color: var(--el-text-color-primary);
   }
 
@@ -29,14 +28,14 @@
   height: 8px;
 }
 
-
 .el-radio-button {
   --el-radio-button-disabled-checked-fill: var(--el-disabled-bg-color);
 }
 
 .el-radio-button__inner {
-  padding: 9px 11px;
-  font-size: var(--sop-font-size);
+  --el-button-font-weight: 400;
+
+  padding: 8px 11px;
   border-color: var(--el-disabled-border-color);
 
   &:hover {
@@ -44,6 +43,30 @@
   }
 }
 
-.el-radio-button__original-radio:disabled+.el-radio-button__inner {
+/**
+ * 状态
+ */
+
+// 禁用状态
+.el-radio-button__original-radio:disabled + .el-radio-button__inner {
   color: var(--seemusic-text-disabled);
+}
+
+// 选中状态
+// .el-radio-button__original-radio:checked + .el-radio-button__inner {
+//   background: #000;
+//   color: var(--seemusic-text-disabled);
+// }
+
+/**
+ * 不同尺寸
+ */
+.el-radio-button--large .el-radio-button__inner {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.el-radio-button--small .el-radio-button__inner {
+  padding-left: 7px;
+  padding-right: 7px;
 }

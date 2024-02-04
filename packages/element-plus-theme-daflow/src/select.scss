@@ -1,16 +1,38 @@
 .el-select {
   --el-select-border-color-hover: var(--seemusic-text-hover);
-  --el-select-font-size: var(--sop-font-size);
-  --el-select-input-font-size: var(--sop-font-size);
+  --el-select-input-font-size: var(--el-font-size-base);
+}
+
+.el-select__popper.el-popper {
+  // @todo select popper 的顶边框如果需要和 select 的底（顶）边框重叠的话，需要做额外处理。
+  // 不能使用 popper-options 设置 offset: [0, -1]，会导致阴影处问题。
+  background: rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(8px);
+  box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .16);
+  border: none;
+  font-family: var(--el-font-family);
+
+  .el-popper__arrow {
+    display: none;
+  }
 }
 
 .el-select-dropdown__item {
-  padding: 0 32px 0 8px;
-  font-size: var(--sop-font-size);
-  color: var(--el-text-color-primary);
+  --el-text-color-regular: #333;
 
-  &.selected {
+  &.is-hovering {
+    background: none;
+    --el-text-color-regular: var(--seemusic-text-hover);
+  }
+
+  &.is-selected {
+    --el-color-primary: #0040FF;
+
     font-weight: 400;
+  }
+
+  &.is-focused {
+    --el-color-primary: #0040FF;
   }
 }
 
@@ -18,10 +40,3 @@
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
   right: 8px;
 }
-
-// TODO
-// 多选模式内的 ElTag 强行指定了 { type: info }，而 .el-tag--info 拥有和缺省类型不一样的样式。
-// 需要考虑要不要在 select 内，把 el-tag--info 覆写成和缺省类型一样的外观
-// .el-select .el-tag.el-tag--info {
-//   background-color: #E6F0FF;
-// }

@@ -5,21 +5,23 @@
   --el-input-hover-border-color: var(--seemusic-text-hover);
   --el-input-border: 1px solid var(--el-input-border-color);
 
-  font-size: var(--sop-font-size);
+  font-family: var(--el-font-family);
 }
 
 .el-input-group__append,
 .el-input-group__prepend {
-  padding: 0 4px;
+  padding: 0 15px;
   color: var(--seemusic-text-disabled);
   background-color: var(--el-disabled-bg-color);
 }
-
 
 .el-input__wrapper {
   padding: 1px 8px;
 }
 
+.el-input__inner {
+  font-family: var(--el-font-family);
+}
 
 .el-textarea__inner {
   padding: 5px 7px;

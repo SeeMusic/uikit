@@ -4,27 +4,29 @@
   --el-table-text-color: var(--el-text-color-primary);
   --el-table-border-color: var(--el-disabled-bg-color);
 
-  font-size: var(--sop-font-size);
+  font-family: var(--el-font-family);
 
   .el-table__cell {
-    padding: 7px 0;
     vertical-align: top;
   }
 
   .cell {
     line-height: 1.5;
-    font-size: 12px;
+  }
+
+  thead th {
+    .cell {
+      line-height: 24px;
+    }
   }
 
   th.el-table__cell.is-leaf {
-    font-size: 0;
     border: none;
   }
 
-  // TODO 待确认
-  // .el-table__header .el-table__cell {
-  //   font-weight: 400;
-  // }
+  .el-table__header .el-table__cell {
+    font-weight: 400;
+  }
 
   // .el-table__header-wrapper tr {
   //   th.el-table-fixed-column--left,
@@ -39,5 +41,5 @@
 }
 
 .el-table__empty-text {
-  color: var(--seemusic-info);
+  line-height: 96px;
 }

@@ -6,9 +6,9 @@ const meta: Meta<typeof ElTable> = {
   title: 'Data/Table 表格',
   component: ElTable,
   args: {
-    stripe: true,
-  },
-}
+    stripe: true
+  }
+};
 
 export default meta;
 
@@ -22,7 +22,7 @@ const defaultArgs = {
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '未生效',
+      status: '未生效'
     },
     {
       id: 0,
@@ -30,24 +30,24 @@ const defaultArgs = {
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '生效中',
+      status: '生效中'
     },
     {
       id: 0,
-      user_name: 'NeoBaran',
+      user_name: 'Neo',
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '已过期',
-    },
-  ],
+      status: '已过期'
+    }
+  ]
 };
 
 export const Overview: Story = {
   render: (args) => ({
     components: {
       ElTable,
-      ElTableColumn,
+      ElTableColumn
     },
     setup() {
       return { args };
@@ -58,12 +58,12 @@ export const Overview: Story = {
       >
         <ElTableColumn
           prop="user_name"
-          label="用户名"
+          label="Username"
         />
 
         <ElTableColumn
           prop="user_email"
-          label="账号"
+          label="Account"
         />
 
         <ElTableColumn
@@ -73,17 +73,17 @@ export const Overview: Story = {
 
         <ElTableColumn
           prop="type"
-          label="身份类型"
+          label="Type"
         />
 
         <ElTableColumn
-          label="审核状态"
+          label="Status"
           prop="status"
         />
       </ElTable>
-    `,
+    `
   }),
-  args: defaultArgs,
+  args: defaultArgs
 };
 
 Overview.args = {
@@ -94,7 +94,7 @@ Overview.args = {
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '未生效',
+      status: '未生效'
     },
     {
       id: 0,
@@ -102,24 +102,24 @@ Overview.args = {
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '生效中',
+      status: '生效中'
     },
     {
       id: 0,
-      user_name: 'NeoBaran',
+      user_name: 'Neo',
       client_id: 'HW1719-J012',
       user_email: 'abc@kanjian.com',
       type: '国内大合同',
-      status: '已过期',
-    },
-  ],
+      status: '已过期'
+    }
+  ]
 };
 
 export const Empty: Story = {
   render: (args) => ({
     components: {
       ElTable,
-      ElTableColumn,
+      ElTableColumn
     },
     setup() {
       return { args };
@@ -130,12 +130,12 @@ export const Empty: Story = {
       >
         <ElTableColumn
           prop="user_name"
-          label="用户名"
+          label="Username"
         />
 
         <ElTableColumn
           prop="user_email"
-          label="账号"
+          label="Account"
         />
 
         <ElTableColumn
@@ -145,18 +145,18 @@ export const Empty: Story = {
 
         <ElTableColumn
           prop="type"
-          label="身份类型"
+          label="Type"
         />
 
         <ElTableColumn
-          label="审核状态"
+          label="Status"
           prop="status"
         />
       </ElTable>
-    `,
+    `
   }),
   args: {
-    emptyText: '暂无数据',
-    data: [],
-  },
+    emptyText: '',
+    data: []
+  }
 };

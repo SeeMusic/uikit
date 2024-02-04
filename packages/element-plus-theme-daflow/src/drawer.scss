@@ -1,7 +1,14 @@
 .el-drawer {
   --el-drawer-padding-primary: 0 24px;
+  font-family: var(--el-font-family);
 
-  font-size: var(--sop-font-size);
+  &.rtl {
+    box-shadow: inset 1px 0 0 0 var(--el-disabled-border-color);
+  }
+
+  &.ltr {
+    box-shadow: inset -1px 0 0 0 var(--el-disabled-border-color);
+  }
 }
 
 .el-drawer__header {
@@ -24,17 +31,22 @@
   padding: 15px 0;
   color: var(--el-text-color-primary);
   font-weight: 600;
-  font-size: var(--sop-font-size);
 }
 
 .el-drawer__close-btn {
-  font-size: 16px;
+  font-size: 24px;
+
+  &:focus,
+  &:hover {
+    i {
+      color: #000;
+    }
+  }
 }
 
 .el-drawer__footer {
   margin-top: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
-  height: 32px;
-  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .16);
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .16);
 }

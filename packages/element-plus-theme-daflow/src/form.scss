@@ -1,10 +1,9 @@
 .el-form {
-  --el-form-label-font-size: var(--sop-font-size);
+  // --el-form-label-font-size: var(--sop-font-size);
+  font-family: var(--el-font-family);
 }
 
 .el-form-item {
-  --font-size: var(--sop-font-size);
-
   margin-bottom: 16px;
 }
 
