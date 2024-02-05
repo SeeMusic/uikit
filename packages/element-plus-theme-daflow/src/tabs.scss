@@ -15,9 +15,7 @@
 }
 
 .el-tabs__item {
-  margin-right: 16px;
-  padding: 0;
-  line-height: 1;
+  padding: 0 16px;
   font-weight: 400;
 
   &.is-disabled {
@@ -28,24 +26,25 @@
 
 .el-tabs--card {
   & > .el-tabs__header {
-    border-bottom: 1px solid var(--el-disabled-border-color);
+    // border-bottom: 1px solid var(--el-disabled-border-color);
 
     .el-tabs__nav {
-      border: none;
+      border-radius: var(--el-border-radius-base);
+      border-color: var(--el-disabled-border-color);
     }
 
     .el-tabs__item {
-      padding: 0 16px;
-      line-height: 32px - 2px;
-      border-width: 1px 1px 0;
-      border-style: solid;
+      // padding: 0 16px;
+      // line-height: 32px - 2px;
+      // border-width: 1px 1px 0;
+      // border-style: solid;
       border-color: var(--el-disabled-border-color);
-      border-radius: var(--el-border-radius-base) var(--el-border-radius-base) 0 0;
+      // border-radius: var(--el-border-radius-base) var(--el-border-radius-base) 0 0;
       background: var(--el-disabled-bg-color);
 
-      &:first-child {
-        border-left: 1px solid var(--el-disabled-border-color);
-      }
+      // &:first-child {
+      //   // border-left: 1px solid var(--el-disabled-border-color);
+      // }
 
       &.is-active {
         background: #FFF;
