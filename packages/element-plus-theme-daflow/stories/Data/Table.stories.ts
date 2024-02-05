@@ -6,7 +6,8 @@ const meta: Meta<typeof ElTable> = {
   title: 'Data/Table 表格',
   component: ElTable,
   args: {
-    stripe: true
+    stripe: true,
+    size: 'large'
   }
 };
 

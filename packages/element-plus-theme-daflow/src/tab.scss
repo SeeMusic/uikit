@@ -1,10 +1,3 @@
-// 2.2.4 引入了 --el-tabs-header-height：40px 的定义，但仅在 card 场景使用
-// .el-tabs--card>.el-tabs__header { height: var(--el-tabs-header-height)}
-// 这里直接注释掉，使用内容高度
-.el-tabs {
-  --el-tabs-header-height: auto;
-}
-
 .el-tabs__header {
   margin-bottom: 16px;
 }
@@ -22,29 +15,17 @@
 .el-tabs__item {
   margin-right: 16px;
   padding: 0;
-  height: 32px;
   line-height: 1;
   font-weight: 400;
-  // font-size: var(--sop-font-size);
 
   &.is-disabled {
     color: var(--seemusic-text-disabled);
     cursor: not-allowed;
   }
-
-  &.is-left,
-  &.is-right {
-    line-height: 32px;
-  }
-}
-
-.el-tabs--right .el-tabs__item.is-right {
-  margin-left: 16px;
-  margin-right: 0;
 }
 
 .el-tabs--card {
-  &>.el-tabs__header {
+  & > .el-tabs__header {
     border-bottom: 1px solid var(--el-disabled-border-color);
 
     .el-tabs__nav {
@@ -52,10 +33,11 @@
     }
 
     .el-tabs__item {
-      margin-right: 8px;
-      padding: 0 8px;
+      padding: 0 16px;
       line-height: 32px - 2px;
-      border: 1px solid var(--el-disabled-border-color);
+      border-width: 1px 1px 0;
+      border-style: solid;
+      border-color: var(--el-disabled-border-color);
       border-radius: var(--el-border-radius-base) var(--el-border-radius-base) 0 0;
       background: var(--el-disabled-bg-color);
 
@@ -64,125 +46,18 @@
       }
 
       &.is-active {
-        background: #FAFAFA;
-      }
-    }
-  }
-
-  &.el-tabs--top,
-  &.el-tabs--bottom {
-    &>.el-tabs__header .el-tabs__item {
-      &:nth-child(2) {
-        padding-left: 8px;
+        background: #FFF;
       }
 
       &:last-child {
-        padding-right: 8px;
-      }
-    }
-  }
-
-  &.el-tabs--left,
-  &.el-tabs--right {
-    &>.el-tabs__header {
-      border-bottom: 0;
-
-      .el-tabs__item {
-        margin-right: 0;
-        margin-left: 0;
-        margin-bottom: 8px;
-        border-color: var(--el-disabled-border-color);
-
-        &:last-child {
-          margin-bottom: 0;
-        }
-
-        &.is-left {
-          border-radius: var(--el-border-radius-base) 0 0 var(--el-border-radius-base);
-          border: 1px solid var(--el-disabled-border-color);
-        }
-
-        &.is-right {
-          border-radius: 0 var(--el-border-radius-base) var(--el-border-radius-base) 0;
-          border: 1px solid var(--el-disabled-border-color);
-        }
-
-        &.is-active {
-          background: #FAFAFA;
-          border: 1px solid var(--el-disabled-border-color);
-
-          &:first-child {
-            border-top: 1px solid var(--el-disabled-border-color);
-          }
-
-          &:last-child {
-            border-bottom: 1px solid var(--el-disabled-border-color);
-          }
-        }
-      }
-
-      &.is-left {
-        border-right: 1px solid var(--el-disabled-border-color);
-      }
-
-      &.is-right {
-        border-left: 1px solid var(--el-disabled-border-color);
+        padding-right: 16px;
       }
     }
   }
 }
 
-.el-tabs--border-card {
-  &>.el-tabs__header {
-    border-bottom: 1px solid var(--el-disabled-border-color);
-    background: var(--el-disabled-bg-color);
 
-    .el-tabs__item {
-      margin-right: 0;
-      padding: 0 8px;
-      line-height: 30px;
-      color: var(--el-text-color-primary);
-
-      &.is-disabled {
-        color: var(--seemusic-text-disabled);
-        cursor: not-allowed;
-      }
-    }
-  }
-
-  &.el-tabs--top,
-  &.el-tabs--bottom {
-    &>.el-tabs__header .el-tabs__item {
-      &:nth-child(2) {
-        padding-left: 8px;
-      }
-
-      :last-child {
-        padding-right: 8px;
-      }
-    }
-  }
-
-  &.el-tabs--bottom > .el-tabs__header.is-bottom {
-    margin-top: 0;
-  }
-
-  &.el-tabs--left,
-  &.el-tabs--right {
-    &>.el-tabs__header {
-      border-bottom: 0;
-    }
-  }
-}
-
-.el-tabs--bottom .el-tabs__header.is-bottom {
-  margin-top: 16px;
-}
-
-.el-tabs--left > .el-tabs__header.is-left {
-  margin-right: 16px;
-}
-
-.el-tabs--right .el-tabs__header.is-right {
-  margin-left: 16px;
+.el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item:last-child {
+  margin: 0;
+  padding-right: 16px;
 }

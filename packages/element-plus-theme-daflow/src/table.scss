@@ -14,12 +14,6 @@
     line-height: 1.5;
   }
 
-  thead th {
-    .cell {
-      line-height: 24px;
-    }
-  }
-
   th.el-table__cell.is-leaf {
     border: none;
   }
@@ -42,4 +36,14 @@
 
 .el-table__empty-text {
   line-height: 96px;
+}
+
+
+/**
+ * 尺寸
+ */
+.el-table--large {
+  .el-table__cell {
+    padding: 9px 0;
+  }
 }

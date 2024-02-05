@@ -1,29 +1,16 @@
 .el-popover {
-  // --el-popover-font-size: var(--sop-font-size);
-  // --el-popover-title-font-size: var(--sop-font-size);
   --el-popover-border-radius: var(--el-border-radius-base);
 
-  // --el-popover-padding: 16px;
+  &.el-popper {
+    line-height: 1.5;
+  }
 
-  // TODO
-  // --el-popover-border-color
-  // --el-popover-padding-large ? 哪里用了
-
-  // &.el-popper {
-  //   line-height: 1.5;
-  //   color: var(--el-text-color-primary);
-
-  //   .el-popper__arrow {
-  //     display: none;
-  //   }
-  // }
-
-  // &.is-light {
-
-  // }
+  &.is-light {
+    backdrop-filter: blur(8px);
+  }
 }
 
 .el-popover__title {
-  line-height: inherit; // 1.5
+  line-height: inherit; // 默认设置为 1，不支持多行。前面通过设置 .el-popper 的 line-height，搭配此处 inherit 继承。
   font-weight: 600;
 }

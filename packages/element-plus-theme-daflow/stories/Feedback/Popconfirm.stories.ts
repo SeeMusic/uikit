@@ -23,10 +23,11 @@ export const Overview:Story = {
       <ElPopconfirm
         cancel-button-type="default"
         hide-icon
-        title="删除项目会导致其歌单一并被删除，确认继续吗？"
+        title="Are you sure to delete this?"
+        :width="180"
       >
         <template #reference>
-          <ElButton>点击激活</ElButton>
+          <ElButton>Confirm</ElButton>
         </template>
       </ElPopconfirm>
     `

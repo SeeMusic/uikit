@@ -1,13 +1,15 @@
 @import "@seemusic/styles/src/themes/element-plus-theme-sop.scss";
 
+// @todo 色彩需要独立一套，和星发的色系剥离
+
 :root {
   --el-border-radius-base: 0;
 
   --icon-default-size: 24px;
 
-  // 主色彩先写死 #333，考虑要不要引用 seemusic-text-regular
   --el-text-color-primary: #333;
   --el-text-color-secondary: #999;
+  --el-text-color-regular: #666;
   // --el-text-color-regular: var(--seemusic-text-normal);
 
   --el-color-primary: var(--seemusic-primary);
@@ -29,7 +31,6 @@
 @import "drawer";
 @import "form";
 @import "input";
-@import "inputnumber";
 @import "pagination";
 @import "popconfirm";
 @import "popover";
