@@ -1,5 +1,7 @@
 .el-tabs__header {
   margin-bottom: 16px;
+  // if <ElDrawer :modal="false"> is under <ElTabs>, the drawer will be hidden by the tabs
+  z-index: 0;
 }
 
 .el-tabs__nav-wrap:after {
@@ -55,7 +57,6 @@
     }
   }
 }
-
 
 .el-tabs--top.el-tabs--card > .el-tabs__header .el-tabs__item:last-child {
   margin: 0;

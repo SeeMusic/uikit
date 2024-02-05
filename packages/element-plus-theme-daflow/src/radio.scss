@@ -44,22 +44,22 @@
 }
 
 /**
- * 状态
+ * Status
  */
 
-// 禁用状态
+// disabled
 .el-radio-button__original-radio:disabled + .el-radio-button__inner {
   color: var(--seemusic-text-disabled);
 }
 
-// 选中状态
+// checked
 // .el-radio-button__original-radio:checked + .el-radio-button__inner {
 //   background: #000;
 //   color: var(--seemusic-text-disabled);
 // }
 
 /**
- * 不同尺寸
+ * Size
  */
 .el-radio-button--large .el-radio-button__inner {
   padding-left: 15px;

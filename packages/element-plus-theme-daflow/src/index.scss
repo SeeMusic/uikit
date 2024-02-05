@@ -1,6 +1,8 @@
 @import "@seemusic/styles/src/themes/element-plus-theme-sop.scss";
 
-// @todo 色彩需要独立一套，和星发的色系剥离
+/** @todo
+ * Need to separate the color system from the Star Sop's color system
+ */
 
 :root {
   --el-border-radius-base: 0;
@@ -10,7 +12,6 @@
   --el-text-color-primary: #333;
   --el-text-color-secondary: #999;
   --el-text-color-regular: #666;
-  // --el-text-color-regular: var(--seemusic-text-normal);
 
   --el-color-primary: var(--seemusic-primary);
 
@@ -27,7 +28,6 @@
 
 @import "button";
 @import "checkbox";
-@import "datepicker";
 @import "drawer";
 @import "form";
 @import "input";
@@ -36,7 +36,7 @@
 @import "popover";
 @import "radio";
 @import "select";
-@import "tab";
+@import "tabs";
 @import "table";
 @import "tag";
 

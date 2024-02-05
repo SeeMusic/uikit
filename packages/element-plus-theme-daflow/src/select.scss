@@ -4,8 +4,10 @@
 }
 
 .el-select__popper.el-popper {
-  // @todo select popper 的顶边框如果需要和 select 的底（顶）边框重叠的话，需要做额外处理。
-  // 不能使用 popper-options 设置 offset: [0, -1]，会导致阴影处问题。
+  /** @todo
+   * If you want the bottom border of ElSelect to overlap with the top border of ElSelectDropdown, additional processing is required.
+   * Do not use popper-options to set offset: [0, -1], as it will cause issues with the shadow.
+   */
   background: rgba(255, 255, 255, 0.6);
   backdrop-filter: blur(8px);
   box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .16);
@@ -36,7 +38,7 @@
   }
 }
 
-/* 多选模式 */
+/* Multiple Mode */
 .el-select-dropdown.is-multiple .el-select-dropdown__item.selected::after {
   right: 8px;
 }

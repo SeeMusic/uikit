@@ -11,6 +11,8 @@
 }
 
 .el-popover__title {
-  line-height: inherit; // 默认设置为 1，不支持多行。前面通过设置 .el-popper 的 line-height，搭配此处 inherit 继承。
+  // The default value of Element Plus is 1, which does not support multi-line titles.
+  // Setting the line-height of .el-popper and inheriting it here.
+  line-height: inherit;
   font-weight: 600;
 }

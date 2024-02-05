@@ -48,5 +48,5 @@
   margin-top: 16px;
   padding-top: 16px;
   padding-bottom: 16px;
-  box-shadow: 0 0 1px 0 rgba(0, 0, 0, .16);
+  box-shadow: inset 0 1px 0 0 var(--el-disabled-border-color);
 }

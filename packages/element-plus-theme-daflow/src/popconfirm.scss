@@ -4,9 +4,8 @@
 
 .el-popconfirm__action {
   margin-top: 16px;
-  text-align: right; // WTF? storybook OK，项目中不生效
 
-  // 设计规范中使用正常按钮，element-plus 写死了 size: small，此处需要强制覆写
+  // The template in the Element Plus source code hard-coded <ElButton size="small">, which needs to be overridden here
   .el-button {
     --el-button-size: 32px;
   }
