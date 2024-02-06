@@ -2,8 +2,6 @@ import {
   ElForm, ElFormItem, ElInput, ElSelect, ElOption,
   ElRadio, ElRadioGroup, ElRadioButton,
   ElButton,
-  ElCheckbox,
-  ElCheckboxGroup,
   ElTag
 } from 'element-plus';
 
@@ -15,7 +13,8 @@ const meta: Meta<typeof ElForm> = {
   args: {
     disabled: false,
     labelPosition: 'top',
-    size: 'large'
+    size: 'large',
+    labelWidth: 'auto'
   }
 };
 

@@ -31,6 +31,7 @@
   padding: 15px 0;
   color: var(--el-text-color-primary);
   font-weight: 600;
+  font-size: 48px;
 }
 
 .el-drawer__close-btn {
@@ -46,7 +47,6 @@
 
 .el-drawer__footer {
   margin-top: 16px;
-  padding-top: 16px;
-  padding-bottom: 16px;
+  padding: 0;
   box-shadow: inset 0 1px 0 0 var(--el-disabled-border-color);
 }

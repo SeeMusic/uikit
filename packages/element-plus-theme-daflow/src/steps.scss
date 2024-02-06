@@ -1,0 +1,22 @@
+.el-steps--simple {
+  border-radius: var(--el-border-radius-base);
+  background: none;
+}
+
+
+.el-step.is-simple {
+  .el-step__title {
+    font-size: 16px;
+  }
+
+  .el-step__arrow {
+    display: none;
+  }
+
+  .el-step__icon {
+    width: 24px;
+    height: 24px;
+    font-size: 16px;
+    border-width: 1px;
+  }
+}

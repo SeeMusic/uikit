@@ -73,6 +73,7 @@ export const FooterSlot: Story = {
         <ElDrawer
           title="Title"
           v-model="isShow"
+          size="50%"
         >
           <p>抽屉内容</p>
           <p>抽屉内容</p>

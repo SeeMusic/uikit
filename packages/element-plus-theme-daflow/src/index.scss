@@ -20,6 +20,7 @@
   --el-disabled-text-color: var(--seemusic-text-disabled);
 
   --el-color-danger: var(--seemusic-danger);
+  --el-color-success: var(--seemusic-success);
 
   --el-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
   --el-font-size-base: 14px;
@@ -36,6 +37,7 @@
 @import "popover";
 @import "radio";
 @import "select";
+@import "steps";
 @import "tabs";
 @import "table";
 @import "tag";

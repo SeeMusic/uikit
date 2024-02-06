@@ -6,13 +6,13 @@
   margin-bottom: 16px;
 }
 
-.el-form.el-form--label-top>.el-form-item:last-child {
+.el-form.el-form--label-top > .el-form-item:last-child {
   margin-bottom: 0;
 }
 
 .el-form-item__label {
   color: var(--el-text-color-primary);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .el-form-item__content {
@@ -28,6 +28,12 @@
   margin-bottom: 4px;
   padding: 0;
   line-height: 1.5;
+}
+
+.el-form--large.el-form--label-top .el-form-item .el-form-item__label {
+  --el-form-label-font-size: 20px;
+
+  margin-bottom: 24px;
 }
 
 .el-form-item.is-required:not(.is-no-asterisk) {
@@ -49,4 +55,13 @@
 
 .el-form-item__content .el-form-item__more:first-child {
   margin-top: 0;
+}
+
+/**
+ * Size
+ * @todo
+ */
+.el-form-item--large {
+  margin: 0;
+  padding: 16px 0;
 }
