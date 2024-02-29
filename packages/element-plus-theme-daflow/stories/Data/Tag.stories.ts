@@ -10,17 +10,17 @@ const meta: Meta<typeof ElTag> = {
       control: {
         type: 'select'
       },
-      options: ['success', 'warning', 'danger', 'info', undefined]
+      options: ['primary', 'success', 'info', 'warning', 'danger']
     },
     size: {
       control: {
         type: 'inline-radio'
       },
       options: ['large', 'default', 'small']
-    },
+    }
   },
   args: {
-    closable: false,
+    closable: false
   }
 };
 
@@ -31,35 +31,35 @@ type Story = StoryObj<typeof ElTag>;
 export const Overview: Story = {
   render: (args) => ({
     components: {
-      ElTag,
+      ElTag
     },
     setup() {
       return {
-        args,
+        args
       };
     },
     data() {
       return {
         list: [
           {
-            name: '标签1',
+            name: '标签1'
           },
           {
-            name: '标签2',
+            name: '标签2'
           },
           {
-            name: '标签3',
+            name: '标签3'
           },
           {
-            name: '标签4',
-          },
-        ],
-      }
+            name: '标签4'
+          }
+        ]
+      };
     },
     methods: {
       removeItem(index) {
         this.list.splice(index, 1);
-      },
+      }
     },
     template: `
       <div
@@ -85,6 +85,6 @@ export const Overview: Story = {
           {{ item.name }}
         </ElTag>
       </div>
-    `,
-  }),
-}
+    `
+  })
+};

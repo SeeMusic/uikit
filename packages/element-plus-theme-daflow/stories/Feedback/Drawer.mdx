@@ -1,0 +1,12 @@
+import { Meta } from '@storybook/blocks';
+import DrawerStories from './Drawer.stories';
+
+<Meta of={DrawerStories} />
+
+## 设计规范
+
+### 留白
+设计规范中，弹窗中的表单单元项之间，会使用通栏的分割线；所以 `.el-drawer__body` 内容部分，不再统一设定留白，交由项目中内部元素控制
+
+### 底部
+设计规范中，要求低栏按钮增大方便操作，提前预置了样式。默认都会有重置和确定按钮，如果特殊场景需要自定义，需要项目方自行处理

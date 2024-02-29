@@ -34,7 +34,7 @@ export const Overview: Story = {
       <div>
         <ElButton @click="showDrawer">打开常规抽屉</ElButton>
         <ElDrawer
-          title="Title"
+          title="Create new Release"
           v-model="isShow"
           :modal="false"
           direction="ltr"

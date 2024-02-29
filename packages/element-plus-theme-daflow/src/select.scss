@@ -3,6 +3,10 @@
   --el-select-input-font-size: var(--el-font-size-base);
 }
 
+.el-select__caret {
+  font-size: 18px;
+}
+
 .el-select__popper.el-popper {
   /** @todo
    * If you want the bottom border of ElSelect to overlap with the top border of ElSelectDropdown, additional processing is required.

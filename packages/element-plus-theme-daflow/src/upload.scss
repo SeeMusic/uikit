@@ -1,0 +1,9 @@
+.el-upload {
+  --el-upload-dragger-padding-horizontal: 24px;
+  --el-upload-dragger-padding-vertical: 24px;
+}
+
+.el-upload-dragger {
+  border-radius: var(--el-border-radius-base);
+  border-color: rgba(0, 0, 0, .16);
+}

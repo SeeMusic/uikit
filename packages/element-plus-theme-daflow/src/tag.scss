@@ -1,7 +1,9 @@
+/**
+ * 注意：
+ * 请不要随意修改 el-tag--info 的样式，尤其是尺寸。在其他组件，比如 ElSelect 中，嵌套使用了此类型
+ */
+
 .el-tag {
-  --el-tag-bg-color: #E6F0FF;
-  --el-tag-border-color: var(--el-tag-bg-color);
-  --el-tag-text-color: var(--el-text-color-primary);
   --el-tag-border-radius: var(--el-border-radius-base);
 
   margin-right: 8px;
@@ -14,8 +16,10 @@
 .el-tag--small {
   padding: 0 4px;
   height: 18px;
+}
 
-  & + & {
-    margin-left: 4px;
-  }
+.el-tag.el-tag--primary {
+  --el-tag-bg-color: rgba(0, 0, 0, .02);
+  --el-tag-border-color: rgba(0, 0, 0, .16);
+  --el-tag-text-color: var(--el-text-color-primary);
 }

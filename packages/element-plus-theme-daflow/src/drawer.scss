@@ -13,14 +13,13 @@
 
 .el-drawer__header {
   position: relative;
-  margin-bottom: 16px;
-  padding-bottom: 0;
+  margin-bottom: 0;
 
   &:after {
     position: absolute;
     content: "";
-    left: 24px;
-    right: 24px;
+    left: 0;
+    right: 0;
     bottom: 0;
     height: 1px;
     background: var(--el-disabled-border-color);
@@ -35,7 +34,7 @@
 }
 
 .el-drawer__close-btn {
-  font-size: 24px;
+  font-size: 36px;
 
   &:focus,
   &:hover {
@@ -45,8 +44,17 @@
   }
 }
 
-.el-drawer__footer {
-  margin-top: 16px;
+.el-drawer__body {
   padding: 0;
-  box-shadow: inset 0 1px 0 0 var(--el-disabled-border-color);
+}
+
+.el-drawer__footer {
+  display: flex;
+  padding: 0;
+
+  .el-button--large {
+    margin: 0;
+    height: 56px;
+    flex: 1;
+  }
 }

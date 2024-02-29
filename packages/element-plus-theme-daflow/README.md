@@ -31,7 +31,7 @@ npm run storybook
 - [x] Input
 - [x] Message
 - [x] Option
-- [ ] Pagination
+- [x] Pagination
 - [x] Popconfirm
 - [x] Popover
 - [x] Radio
@@ -41,3 +41,4 @@ npm run storybook
 - [x] Table
 - [x] Tabs
 - [x] Tag
+- [x] Upload

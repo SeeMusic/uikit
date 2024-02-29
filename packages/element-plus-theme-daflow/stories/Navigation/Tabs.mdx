@@ -5,6 +5,7 @@ import * as TabStories from './Tabs.stories'
 
 ## 设计规范
 
-* 默认使用 `type: 'card'` 的样式
-* 仅支持 `tabPosition: 'top'
-* 不支持嵌套 `ElTab`
+当前使用到两种样式，需要搭配不同参数使用：
+
+* 默认的常规横向排版: `type: 'card'` 配合 `tabPosition: top`
+* 侧边导航栏: `type` 可以缺省不传，配合 `tabPosition: left` 使用
