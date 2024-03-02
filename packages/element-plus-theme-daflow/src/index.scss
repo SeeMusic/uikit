@@ -1,46 +1,18 @@
-@import "@seemusic/styles/src/themes/element-plus-theme-sop.scss";
-
-/** @todo
- * Need to separate the color system from the Star Sop's color system
- */
-
-:root {
-  --el-border-radius-base: 0;
-
-  --icon-default-size: 24px;
-
-  --el-text-color-primary: #333;
-  --el-text-color-secondary: #999;
-  --el-text-color-regular: #666;
-
-  --el-color-primary: var(--seemusic-primary);
-
-  --el-disabled-bg-color: var(--seemusic-bg-disabled);
-  --el-disabled-border-color: var(--seemusic-border-disabled);
-  --el-disabled-text-color: var(--seemusic-text-disabled);
-
-  --el-color-danger: var(--seemusic-danger);
-  --el-color-success: var(--seemusic-success);
-
-  --el-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --el-font-size-base: 14px;
-  --el-bg-color-overlay: rgba(255, 255, 255, 0.6);
-}
-
-@import "button";
-@import "checkbox";
-@import "drawer";
-@import "form";
-@import "input";
-@import "pagination";
-@import "popconfirm";
-@import "popover";
-@import "radio";
-@import "select";
-@import "tabs";
-@import "table";
-@import "tag";
-@import "upload";
+@use "variables";
+@use "button";
+@use "checkbox";
+@use "drawer";
+@use "form";
+@use "input";
+@use "pagination";
+@use "popconfirm";
+@use "popover";
+@use "radio";
+@use "select";
+@use "tabs";
+@use "table";
+@use "tag";
+@use "upload";
 
 .el-popper {
   --el-popover-border-radius: var(--el-border-radius-base);

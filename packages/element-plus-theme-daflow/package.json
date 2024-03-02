@@ -1,7 +1,7 @@
 {
   "name": "@seemusic/element-plus-theme-daflow",
   "private": false,
-  "version": "2.5.6-alpha.1",
+  "version": "2.5.6-alpha.2",
   "description": "Element Plus Theme For daflow.ai",
   "main": "src/index.scss",
   "author": "cuiguojie@kanjian.com",
@@ -42,7 +42,7 @@
     "typescript": "~5.3.3",
     "vite": "^5.1.4",
     "vue": "^3.4.21",
-    "vue-tsc": "^1.8.27"
+    "vue-tsc": "^2.0.2"
   },
   "bugs": {
     "url": "https://github.com/SeeMusic/uikit/issues"
