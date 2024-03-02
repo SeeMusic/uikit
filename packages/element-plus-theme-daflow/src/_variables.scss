@@ -5,24 +5,10 @@
  */
 
 :root {
-  --el-border-radius-base: 0;
 
   --icon-default-size: 24px;
-
-  --el-text-color-primary: #333;
-  --el-text-color-secondary: #999;
-  --el-text-color-regular: #666;
-
-  --el-color-primary: var(--seemusic-primary);
 
   --el-disabled-bg-color: var(--seemusic-bg-disabled);
   --el-disabled-border-color: var(--seemusic-border-disabled);
   --el-disabled-text-color: var(--seemusic-text-disabled);
-
-  --el-color-danger: var(--seemusic-danger);
-  --el-color-success: var(--seemusic-success);
-
-  --el-font-family: "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  --el-font-size-base: 14px;
-  --el-bg-color-overlay: rgba(255, 255, 255, 0.6);
 }

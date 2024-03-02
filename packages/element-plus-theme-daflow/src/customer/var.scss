@@ -1,0 +1,85 @@
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  /**
+   * Color
+   */
+  $colors: (
+    'primary': (
+      'base': #0040FF,
+    ),
+    'danger': (
+      'base': #FF4B4B,
+    ),
+    'success': (
+      'base': #28CA41,
+    ),
+  ),
+
+  $text-color: (
+    'primary': #333,
+    'secondary': #999,
+    'regular': #666,
+  ),
+
+  /**
+   * Font
+   */
+  $font-size: (
+    'base': 14px,
+  ),
+
+  $font-family: (
+    '': "Roboto Mono", "Helvetica Neue", "Helvetica", "Arial", sans-serif,
+  ),
+
+  /**
+   * Border
+   */
+  $border-radius: (
+    'base': 0,
+  ),
+
+  // Overlay, for dialog, drawer, etc.
+  $overlay-color: (
+    'lighter': rgba(255, 255, 255, 0.6),
+  ),
+
+
+  /**
+   * Components
+   */
+  $upload: (
+    'dragger-padding-horizontal': 24px,
+    'dragger-padding-vertical': 24px,
+  ),
+
+  $tag: (
+    'border-radius': 0,
+  ),
+
+  $drawer: (
+    'padding-primary': 0 24px,
+  ),
+
+  $input: (
+    'text-color': getCssVar('text-color-primary'),
+    'border': 1px solid #DDD,
+    'border-color': #DDD,
+    'hover-border-color': #2965FF,
+  ),
+
+  $popover: (
+    'border-radius': getCssVar('border-radius-base'),
+  ),
+
+  $pagination: (
+    'button-bg-color': none,
+    'button-color': #000,
+    'border-radius': getCssVar('border-radius-base'),
+    'item-gap': 8px,
+  ),
+
+  $select: (
+    'border-color-hover': #2965FF,
+    'input-font-size': getCssVar('font-size-base'),
+  )
+);
