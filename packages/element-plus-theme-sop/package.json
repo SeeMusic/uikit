@@ -1,7 +1,7 @@
 {
   "name": "@seemusic/element-plus-theme-sop",
   "private": false,
-  "version": "2.4.0",
+  "version": "2.4.3",
   "description": "星球发行 SOP 系统自定义 Element Plus 皮肤",
   "main": "src/index.scss",
   "author": "cuiguojie@kanjian.com",
