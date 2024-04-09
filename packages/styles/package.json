@@ -1,7 +1,7 @@
 {
   "name": "@seemusic/styles",
   "private": false,
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "看见音乐 CSS 公共库",
   "author": "cuiguojie@kanjian.com",
   "bugs": {
