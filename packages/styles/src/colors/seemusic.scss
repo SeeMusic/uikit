@@ -1,6 +1,9 @@
 :root {
   // Brand Color
   --seemusic-primary: #0040FF;
+  --seemusic-primary-light-1: #295FFF;
+  --seemusic-primary-light-6: #A3BAFF;
+  --seemusic-primary-light-9: #E6ECFF;
 
   // Status
   --seemusic-success: #28CA41;
@@ -13,7 +16,7 @@
   --seemusic-text-description: #999;
   --seemusic-text-disabled: #CCC;
 
-  --seemusic-text-hover: #2965FF;
+  --seemusic-text-hover: var(--seemusic-primary-light-1);
   --seemusic-text-active: var(--seemusic-primary);
 
   // Border
@@ -28,8 +31,8 @@
   --seemusic-highlight-bg: var(--seemusic-primary);
   --seemusic-highlight-context: #FFF;
 
-  --seemusic-primary-border: #A3C6FF;
-  --seemusic-primary-bg: #E6F0FF;
+  --seemusic-primary-border: var(--seemusic-primary-light-6);
+  --seemusic-primary-bg: var(--seemusic-primary-light-9);
 
   --seemusic-success-border: #76E37F;
   --seemusic-success-bg: #F0FFF0;
