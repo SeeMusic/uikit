@@ -19,7 +19,7 @@ importers:
   packages/element-plus-theme-sop:
     specifiers:
       '@rushstack/eslint-patch': ^1.3.2
-      '@seemusic/styles': workspace:^0.0.2
+      '@seemusic/styles': workspace:^0.0.2-rc.1
       '@storybook/addon-essentials': ^7.1.1
       '@storybook/addon-interactions': ^7.1.1
       '@storybook/addon-links': ^7.1.1
@@ -74,7 +74,7 @@ importers:
   packages/element-plus-theme-starcast:
     specifiers:
       '@rushstack/eslint-patch': ^1.3.2
-      '@seemusic/styles': workspace:^0.0.2
+      '@seemusic/styles': workspace:^0.0.2-rc.1
       '@storybook/addon-essentials': ^7.1.1
       '@storybook/addon-interactions': ^7.1.1
       '@storybook/addon-links': ^7.1.1
